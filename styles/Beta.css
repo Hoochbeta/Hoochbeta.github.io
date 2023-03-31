@@ -1,0 +1,300 @@
+:root{
+  --primary:0, 98, 111;
+  --bg: 16,16,16;
+  --accent: 207, 181, 59; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+Body{
+  overflow-x: hidden;
+  background-color: rgb(var(--bg));
+  list-style: none;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+}
+nav {
+  width: 100vw;
+  background-color: rgb(var(--primary));
+}
+a{
+  text-decoration: none;
+  color: rgb(var(--accent));
+}
+.nav-links {
+  list-style: none;
+  display: grid;
+  grid-template-columns: .5fr 3fr 1fr 1fr 1fr 1fr .5fr .5fr;
+  text-decoration: none;
+  color: rgb(var(--accent));
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+}
+.nav-item {
+  align-items: center;
+}
+.subnavbtn {
+  background-color: inherit;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: inherit;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.subnav {
+  position: relative;
+  display: inline-block;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(var(--primary));
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.subnav-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: rgb(var(--accent));
+}
+
+.subnav-content a:hover {
+  color: #f1f1f1
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+  
+}
+
+.Logo{
+  height: 50px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.School{
+  font-size: 112.5%;
+  font-weight: 700;
+  color: rgb(var(--accent));
+  align-items: center;
+}
+i{
+  transform: translate(4px,1.75px);
+}
+main{
+  display: grid;
+  grid-template-columns: repeat(6, 0.5fr);
+  grid-template-rows: 1fr 0.25fr 1fr 1fr;
+  grid-template-areas:
+  "📅 🏫 🏫 🏫 🫅 🫅"
+  "🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺"
+  "🦉 🦉 🦉 🦉 📷 📷"
+  "🤝 🤝 🤝 ❓ ❓ ❓";
+  width: 100%;
+  height:100vh;
+  margin: 10px;
+  gap: .5rem;
+}
+.Events{
+  grid-area: 📅;
+  text-align: center;
+  border: 2px solid #FFF;
+}
+.Hooch{
+  grid-area: 🏫;
+  text-align: center;
+  align-items: center;
+}
+.Leaders{
+  grid-area: 🫅;
+}
+.Motto{
+  grid-area: 🐕‍🦺;
+  text-align: center;
+  align-items: center;
+}
+.Quote{
+  grid-area: 🦉;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:url(Images/Quotebg.gif) ;
+  background-position-y: center;
+  background-size: cover;
+  font-size: 150%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Pictures{
+  grid-area: 📷;
+  display: flex;
+  justify-content: center;
+}
+.Meeting{
+  grid-area: 🤝;
+  text-align: center;
+  margin-top: 10px;
+}
+.Meeting-Grid{
+  display: grid;
+  grid-template-areas:
+  "Fall Spring"
+  "Date1 Date6"
+  "Date2 Date7"
+  "Date3 Date8"
+  "Date4 Date9" 
+  "Date5 Date10";
+  align-items: center;
+  text-align: center;
+  gap: .5rem;
+  margin: 5px;
+}
+.dates{
+  font-size: 75%;
+  font-weight: 200;
+}
+.Beta{
+  grid-area: ❓;
+  text-align: center;
+  margin-top: 10px;
+}
+.Header{
+  font-size: 125%;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+footer{
+  background-color: rgb(var(--primary));
+  text-decoration: none;
+  margin-top: 2px;
+  padding: 1rem 2rem;
+  width: 100vw;
+  margin-top: 4.5%;
+  height: 16%;
+}
+article{
+  margin: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+.slider{
+  width: 333.3375px;
+  height: 197.5px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slides{
+  width: 500%;
+  height: 197.5px;
+  display: flex;
+}
+.slides input{
+display: none;
+}
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+.slide img{
+  width: 333.3375px;
+  height: 197.5px;
+}
+/* Css for manual slide navigation */
+.navigation-manual{
+  position: absolute;
+  width: 333.3375px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid rgb(var(--accent));
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 20px ;
+}
+.manual-btn:hover{
+  background-color: rgb(var(--accent));
+}
+#radio0:checked ~ .first{
+  margin-left: 0;
+}
+#radio1:checked ~ .first{
+  margin-left: -20%;
+}
+#radio2:checked ~ .first{
+  margin-left: -40%;
+}
+#radio3:checked ~ .first{
+  margin-left: -60%;
+}
+#radio4:checked ~ .first{
+  margin-left: -80%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+#radio6:checked ~ .first{
+  margin-left: -120%;
+}
+/* Css for automatic navigation */
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 333.3375px;
+  justify-content: center;
+  margin-top: 207.5px;
+}
+.navigation-auto div{
+  border: 2px solid rgb(var(--accent));
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 20px;
+}
+#radio0:checked ~ .navigation-auto .auto-btn0{
+  background-color: rgb(var(--accent));
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: rgb(var(--accent));
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: rgb(var(--accent));
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: rgb(var(--accent));
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: rgb(var(--accent));
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background-color: rgb(var(--accent));
+}
+#radio6:checked ~ .navigation-auto .auto-btn6{
+  background-color: rgb(var(--accent));
+}
+iframe{
+  width: 100%;
+  height: 100vw;
+  border: none;
+}
