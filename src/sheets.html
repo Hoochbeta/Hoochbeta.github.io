@@ -5,7 +5,7 @@
     <?!= include('Table.html'); ?>
   </head>
   <body>
-    <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for your name" title="Type in a name" >
+      <input type="text" id="myInput" placeholder="Search for your name">
    <table>
     <?var tableData = getSheetData();?>
     <?for(var i = 0; i < tableData.length; i++) { ?>
