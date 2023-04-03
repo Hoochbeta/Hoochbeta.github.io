@@ -3,10 +3,13 @@
   <head>
     <base target="_top">
     <?!= include('Table.html'); ?>
+    <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="search-container">
       <input type="text" id="myInput" placeholder="Search for your name">
-      <button type="submit" id="submit-myInput" onclick="Search()">Submit</button>
+      <button type="submit"onclick="Search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
    <table id="myTable">
     <?var tableData = getSheetData();?>
     <?for(var i = 0; i < tableData.length; i++) { ?>
