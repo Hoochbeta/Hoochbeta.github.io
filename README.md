@@ -8,7 +8,7 @@ About: Leadership, Detailed Explanation of Beta at Chattahoochee High School
 
 Events: Betacon--> What it is and pictures
         Newsletters
-        Places to volunteer
+        Places to volunteer DOING
 
 Hours: Hour Submission check DONE
        Checking Hours DOING
