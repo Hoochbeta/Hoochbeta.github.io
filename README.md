@@ -1,7 +1,7 @@
 Documentaition of clasp use
 
 Planning:
-Home: Landing Page DONE
+Home: Landing Page DOING (mobile version sidenavbar)
 
 About: Leadership, Detailed Explanation of Beta at Chattahoochee High School
        FAQ DONE
