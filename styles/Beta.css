@@ -16,10 +16,10 @@ Body{
   font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: white;
-  max-width: 100svw;
+  max-width: 100vw;
 }
 nav {
-  width: 100vw;
+  min-width: 100vw;
   background-color: rgb(var(--primary));
 }
 a{
@@ -111,12 +111,16 @@ main{
 }
 .Events{
   grid-area: 📅;
+  margin: 0 10px;
   text-align: center;
 }
 .Hooch{
   grid-area: 🏫;
   text-align: center;
   align-items: center;
+}
+.Hooch>p{
+  font-size: 1.111vw;
 }
 .Leaders{
   grid-area: 🫅;
@@ -203,7 +207,7 @@ footer{
   text-decoration: none;
   margin-top: 2px;
   padding: 1rem 2rem;
-  width: 100%;
+  width: 100vw;
   /* margin-top: 4.5%; */
   bottom: 0;
   height: 4rem;
@@ -321,9 +325,11 @@ display: none;
   height: 100svw;
   border: none;
 }
+
 .index{
+  width: 100%;
   height: 100%;
   border: none;
-  padding: 10px;
-  max-width: 0.5fr;
+  min-width: 150px;
+  max-height: 263px;
 }
