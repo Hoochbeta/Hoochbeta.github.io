@@ -3,7 +3,6 @@
   --bg: 16,16,16;
   --accent: 207, 181, 59; 
 }
-
 *{
   margin: 0;
   padding: 0;
@@ -102,7 +101,7 @@ main{
   grid-template-areas:
   "📅 🏫 🏫 🏫 🫅 🫅"
   "🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺"
-  "🦉 🦉 🦉 🦉 📷 📷"
+  "🦉 🦉 🦉 📷 📷 📷"
   "🤝 🤝 🤝 ❓ ❓ ❓";
   width: 100%;
   height:100vh;
@@ -117,14 +116,18 @@ main{
 .Hooch{
   grid-area: 🏫;
   text-align: center;
-  align-items: center;
 }
 .Hooch>p{
-  font-size: 1.111vw;
+  margin-top: 10px;
+  font-size: 1.23vw;
 }
 .Leaders{
   grid-area: 🫅;
   text-align: center;
+}
+.Leaders>img{
+  width:27vw;
+  aspect-ratio: 16/9;
 }
 .Motto{
   grid-area: 🐕‍🦺;
@@ -172,7 +175,7 @@ main{
   margin: 5px;
 }
 .dates{
-  font-size: 75%;
+  font-size: 0.9vw;
   font-weight: 200;
 }
 .Beta{
@@ -181,8 +184,11 @@ main{
   margin-top: 10px;
   padding: 10px;
 }
-.Header{
-  font-size: 125%;
+.Beta>p{
+  font-size: 1.23vw;
+}
+.Beta>.Header{
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
 }
@@ -192,15 +198,9 @@ main{
 }
 
 #content-wrap {
-  padding-bottom: 4rem;    /* Footer height */
+  padding-bottom: 5rem;    /* Footer height */
 }
 
-/* #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;             Footer height 
-} */
 footer{
   position: absolute;
   background-color: rgb(var(--primary));
@@ -208,9 +208,8 @@ footer{
   margin-top: 2px;
   padding: 1rem 2rem;
   width: 100vw;
-  /* margin-top: 4.5%; */
   bottom: 0;
-  height: 4rem;
+  height: 3.5rem;
 }
 article{
   margin: 10px;
@@ -328,8 +327,39 @@ display: none;
 
 .index{
   width: 100%;
-  height: 100%;
+  height: 30vh;
   border: none;
-  min-width: 150px;
-  max-height: 263px;
+  min-width: 155px;
+}
+@media(max-width:740px) {
+  main{
+    display:block;
+  }
+  .Hooch>p, .Beta>p{
+    font-size: 1.8vh;
+  }
+  .Leaders{
+    margin-top: 10px;
+  }
+  .Leaders>img{
+    width: 30vh;
+  }
+  .Motto{
+    margin: 10px 0;
+  }
+  .Quote{
+    margin: 10px 0;
+  }
+  .Pictures{
+    margin-bottom: 30px;
+  }
+  .dates{
+    font-size: 12px;
+  }
+  #content-wrap{
+    padding-bottom: 55em;
+  }
+  footer{
+    height: 3.5em;
+  }
 }
