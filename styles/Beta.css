@@ -113,7 +113,7 @@ a{
 
 .menu-btn{
   position: absolute;
-  top: 0;
+  top: 0px;
   right: 0;
   margin-right: 13px;
   color: rgb(var(--accent));
@@ -136,14 +136,13 @@ i{
 }
 
 #content-wrap {
-  padding-bottom: 1rem;    /* Footer height */
+  padding-bottom: 1rem;
 }
 .index-wrap{
   padding-bottom: 5rem;
   position: relative;
 }
 footer{
-  /* position: absolute; */
   background-color: rgb(var(--primary));
   text-decoration: none;
   margin-top: 2px;
@@ -159,16 +158,6 @@ footer{
 }
 .index-footer{
   position: absolute;
-  background-color: rgb(var(--primary));
-  text-decoration: none;
-  margin-top: 2px;
-  padding: 1rem 2rem;
-  width: 100vw;
-  bottom: 0;
-  height: 3.5rem;
-  z-index: -1;
-  display: flex;
-  align-items:center;
 }
 article{
   margin: 10px;
@@ -204,7 +193,6 @@ article>p{
    transition: 0.6s ease;
    transition-property: right;
   }
-  
   .nav-links{
    width: 100%;
    margin-top: 80px;
