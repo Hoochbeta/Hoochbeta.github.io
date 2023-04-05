@@ -20,5 +20,6 @@ Load information and Grab pictures for Betacon
 Design a grid layout for the Newsletter *use the car website layout geturcar.github.com*
 Load the events page and make a custom table
 Write JS to keep table hidden until searched in and then reveal and show a single result
+Addd two divs for information using flex on Check.html
 Learn how to use sheets properly
 Get pictures of Leaders from Website and add an Explanation of what Beta Club is at Hooch at the top of the page
