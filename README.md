@@ -17,7 +17,7 @@ Hours: Hour Submission check DONE
 To do:
 make footer responsive
 Load information and Grab pictures for Betacon
-Design a grid layout for the Newsletter *use the car website layout geturcar.github.com*
+Design a grid layout for the Newsletter **use the car website layout geturcar.github.io**
 Load the events page and make a custom table
 Write JS to keep table hidden until searched in and then reveal and show a single result
 Addd two divs for information using flex on Check.html
