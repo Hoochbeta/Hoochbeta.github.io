@@ -109,11 +109,11 @@ a{
 }
 
 .menu-btn{
-  position: absolute;
+  position: fixed;
+  top: 0;
   right: 0;
   color: rgb(var(--accent));
   font-size: 20px;
-  margin: 25px;
   cursor: pointer;
   display: none;
 }
@@ -228,7 +228,7 @@ main{
 }
 
 #content-wrap {
-  padding-bottom: 5rem;    /* Footer height */
+  padding-bottom: 5em;    /* Footer height */
 }
 .index-wrap{
   padding-bottom: 5rem;
