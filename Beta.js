@@ -1,3 +1,4 @@
+
 setInterval(function(){
     let counter= 0;
     document.getElementById('radio'+ counter).checked=true;
@@ -6,3 +7,5 @@ setInterval(function(){
         counter = 0;
     }
 }, 5000);
+
+

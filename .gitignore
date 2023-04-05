@@ -1,3 +1,5 @@
 .clasp.json
-Test.html
-Test.css
+Test/Test.html
+Test/Test.css
+Test/Test.js
+./Test
