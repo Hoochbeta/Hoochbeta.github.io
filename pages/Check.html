@@ -12,42 +12,51 @@
 <body>
   <div id="page-container">
     <div id="content-wrap">
+  <div class="menu-btn">
+    <i class="fa fa-bars"></i>
+  </div>
   <nav class="navbar">
+    <div class="close-btn">
+       <img src="../Images/Logo.png" alt="Logo" class="Logo">
+       <i class="fa fa-times"></i>
+    </div>
     <ul class="nav-links">
-      <li><img src="../Images/Logo.png" alt="Logo" class="Logo"></li>
-      <li class="School">Chattahoochee High Beta</li>
-      <li class="nav-item"><a href="../index.html">Home</a></li>
+     <li><img src="../Images/Logo.png" alt="Logo" class="Logo"></li>
+     <li class="School">Chattahoochee High Beta</li>
+      <li class="nav-item"><a href="#">Home</a></li>
       <div class="subnav">
-        <button class="subnavbtn">About<i class="fa fa-angle-down"></i></button>
-          <div class="subnav-content">
-            <li><a href="Leadership.html">Leadership</a></li>
-            <li><a href="FAQ.html">FAQ</a></li>
-          </div>
-        </div>
-      <div class="subnav">
-      <button class="subnavbtn">Events<i class="fa fa-angle-down"></i></button>
+        <a class="subnavbtn">About<i class="fa fa fa-angle-down dropdown"></i></a>
         <div class="subnav-content">
-          <li><a href="Betacon.html">Betacon</a></li>
-          <li><a href="Newsletter.html">News letter</a></li>
-          <li><a href="Oppurtunities.html">Oppurtunities</a></li>
+          <li><a href="Leadership.html" class="sub-item">Leadership</a></li>
+          <li><a href="FAQ.html" class="sub-item">FAQ</a></li>
         </div>
       </div>
       <div class="subnav">
-        <button class="subnavbtn">Hours<i class="fa fa-angle-down"></i></button>
-          <div class="subnav-content">
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdexgSwYnfp_sCrnxnTucHwFXjQOsydzfa9yLLjv0X0c9Zwww/viewform">Form</a></li>
-            <li><a href="Check.html">Hour Check</a></li>
-          </div>
+       <a class="subnavbtn"></i>Events<i class="fa fa fa-angle-down dropdown"></i></a>
+       <div class="subnav-content">
+         <li><a href="Betacon.html" class="sub-item">Betacon</a></li>
+         <li><a href="Newsletter.html" class="sub-item">News letter</a></li>
+         <li><a href="Oppurtunities.html" class="sub-item">Oppurtunities</a></li>
+       </div>
+     </div>
+      <div class="subnav">
+        <a class="subnavbtn"></i>Hours<i class="fa fa fa-angle-down dropdown"></i></a>
+        <div class="subnav-content">
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdexgSwYnfp_sCrnxnTucHwFXjQOsydzfa9yLLjv0X0c9Zwww/viewform" class="sub-item">Form</a></li>
+          <li><a href="Check.html" class="sub-item">Hour Check</a></li>
         </div>
-      <li class="nav-item"><a href="https://www.instagram.com/hooch_beta/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram fa-2x" style="color: #DD27AB;"></i></a></li>
-      <li class="nav-item"><a href="https://twitter.com/hoochbeta?lang=en" target="_blank"><i class="fa-brands fa-square-twitter fa-2x" style="color: #1DA1F2;"></i></a></li>
+      </div>
+      <div class="brands">
+       <li><a href="https://www.instagram.com/hooch_beta/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram fa-2x" style="color: #DD27AB;"></i></a></li>
+       <li><a href="https://twitter.com/hoochbeta?lang=en" target="_blank"><i class="fa-brands fa-square-twitter fa-2x" style="color: #1DA1F2;"></i></a></li>
+     </div>
     </ul>
    </nav>
-   <iframe class="check" src="https://script.google.com/macros/s/AKfycbx0fIlQh46ViSnJHaJU9HWeZsQu3QMYxYgS9Abo94B9kKTScJxnrH2o_lQ4IiFgDHZcCQ/exec"></iframe> 
-   </div>
+  </div>
    <footer>
     <p>© Chattahoochee High School</p>
   </footer>
 </div>
+  <script src="../Beta.js"></script>
 </body>
 </html>
