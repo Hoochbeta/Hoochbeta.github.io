@@ -6,7 +6,7 @@ Home: Landing Page DONE
 About: Leadership, Detailed Explanation of Beta at Chattahoochee High School
        FAQ DONE
 
-Events: Betacon--> What it is and pictures
+Events: Betacon--> What it is and pictures DOING
         Newsletters
         Places to volunteer DOING
 
