@@ -9,7 +9,7 @@ function getSheetData()  {
   var a= SpreadsheetApp.getActiveSpreadsheet();
   var b = a.getSheetByName('Sheet1'); 
   var c = b.getDataRange();
-  return c.getValues();  
+  return c.getDisplayValues();  
 }
 
 function include(filename) {
