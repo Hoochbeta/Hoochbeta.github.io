@@ -11,13 +11,12 @@ Events: Betacon--> What it is and pictures DOING
         Places to volunteer DONE
 
 Hours: Hour Submission check DONE
-       Checking Hours DOING
+       Checking Hours ONHOLD
 
 
 To do:
 Load information and Grab pictures for Betacon
-Write JS to keep table hidden until searched in and then reveal and show a single result
 Add two divs for information using flex on Check.html
-Learn how to use sheets properly
 Get pictures of Leaders from Website and add an Explanation of what Beta Club is at Hooch at the top of the page
 Write Documentation
+Learn how to use sheets properly
