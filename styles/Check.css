@@ -1,0 +1,31 @@
+:root{
+    --primary:0, 98, 111;
+    --bg: 16,16,16;
+    --accent: 207, 181, 59; 
+    --primary-dark:0,82, 95; 
+}
+.Check{
+    height: 50vh;
+}
+#row1, #row2, .hours, .meeting, .vary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hours, .meeting, .vary{
+    padding: 10px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    font-size: 28px;
+}
+.hours{
+    background-color: rgba(var(--primary),0.8);
+}
+.meeting{
+    background-color: rgba(var(--primary-dark),0.8);
+}
+.vary{
+    background-color: rgba(var(--accent),0.8);
+}
