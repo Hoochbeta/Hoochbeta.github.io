@@ -16,7 +16,6 @@ Hours: Hour Submission check DONE
 
 To do:
 Load information and Grab pictures for Betacon
-Add two divs for information using flex on Check.html
 Get pictures of Leaders from Website and add an Explanation of what Beta Club is at Hooch at the top of the page
 Write Documentation
 Learn how to use sheets properly

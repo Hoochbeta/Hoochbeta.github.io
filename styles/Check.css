@@ -5,27 +5,33 @@
     --primary-dark:0,82, 95; 
 }
 .Check{
-    height: 50vh;
+    width: 100%;
+    height: 51vh;
+    border: none;
 }
-#row1, #row2, .hours, .meeting, .vary{
+#row1{
+    height: 25vh ;
+    background-image: linear-gradient(to right, rgb(var(--primary-dark)), rgb(var(--accent)) );
+}
+#row1,.hours, .meeting, .vary{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .hours, .meeting, .vary{
+    color: rgb(32,32,32);
     padding: 10px;
-    margin: 10px;
-    height: 200px;
+    aspect-ratio: 1/1;
     width: 200px;
-    font-size: 28px;
+    font-size: 24px;
 }
-.hours{
-    background-color: rgba(var(--primary),0.8);
+.index-wrap{
+    padding-bottom: 5em;
 }
-.meeting{
-    background-color: rgba(var(--primary-dark),0.8);
-}
-.vary{
-    background-color: rgba(var(--accent),0.8);
+@media(max-width:740px){
+    .hours, .meeting, .vary{
+        width: 150px;
+        font-size: 18px;
+    }
 }
