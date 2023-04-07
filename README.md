@@ -11,7 +11,7 @@ Events: Betacon--> What it is and pictures DOING
         Places to volunteer DONE
 
 Hours: Hour Submission check DONE
-       Checking Hours ONHOLD
+       Checking Hours DONE
 
 
 To do:
