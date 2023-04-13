@@ -1,10 +1,11 @@
-let counter= 0;
+document.getElementById('radio0').checked = true;
 setInterval(function(){
-    document.getElementById('radio'+ counter).checked = true;
-    counter=counter+1;
-    console.log(counter);
-    if(counter > 6){
-        counter = 0;
+    for (let i = 0; i < 7; i++){
+      if (document.getElementById('radio'+ String(i)).checked == true){
+        document.getElementById('radio'+ String(i)).checked = false;
+        document.getElementById('radio'+ String((i + 1) % 7)).checked = true;
+        break
+      }
     }
 }, 5000);
 
