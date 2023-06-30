@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Betacon</title>
     <link rel="stylesheet" href="../styles/Beta.css">
+    <link rel="stylesheet" href="../styles/Betacon.css">
     <link rel="shortcut icon" href="../Images/Favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
 </head>
@@ -44,6 +45,7 @@
         <div class="subnav-content">
           <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdexgSwYnfp_sCrnxnTucHwFXjQOsydzfa9yLLjv0X0c9Zwww/viewform" class="sub-item">Form</a></li>
           <li><a href="Check.html" class="sub-item">Hour Check</a></li>
+          <li><a href="Status.html" class="sub-item">Hour Status</a></li>
         </div>
       </div>
       <div class="brands">
@@ -52,11 +54,74 @@
      </div>
     </ul>
    </nav>
-  </div>
+   <div class="top">
+    <img src="../Images/Betacon/Betacon Logo.png">
+    <p>
+      <span>Betacon</span>
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+   </div>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio0">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="../Images/Betacon/Con1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Images/Betacon/Con2.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Images/Betacon/Con3.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="../Images/Betacon/con4.png" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <div class="navigation-auto">
+          <div class="auto-btn0"></div>
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio0" class="manual-btn"></label>
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
    <footer>
     <p>© Chattahoochee High School</p>
   </footer>
 </div>
-  <script src="../Beta.js"></script>
+<script>
+  document.getElementById('radio0').checked = true;
+  setInterval(function(){
+      for (let i = 0; i < 4; i++){
+        if (document.getElementById('radio'+ String(i)).checked == true){
+          document.getElementById('radio'+ String(i)).checked = false;
+          document.getElementById('radio'+ String((i + 1) % 4)).checked = true;
+          break
+        }
+      }
+  }, 5000);
+</script>
 </body>
 </html>

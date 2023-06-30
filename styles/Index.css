@@ -6,16 +6,16 @@
 }
 main{
 display: grid;
-grid-template-columns: repeat(6, 0.5fr);
+grid-template-columns: repeat(4, 0.25fr);
 grid-template-rows: 1fr 0.25fr 1fr 1fr;
 grid-template-areas:
-"📅 🏫 🏫 🏫 🫅 🫅"
-"🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺 🐕‍🦺"
-"🦉 🦉 🦉 📷 📷 📷"
-"🤝 🤝 🤝 ❓ ❓ ❓";
+"📅 🏫 🏫 🏫"
+"📅 🐕‍🦺 🐕‍🦺 🐕‍🦺"
+"📅 📷 📷 📷"
+"📅 🤝 🤝 🤝";
 width: 100%;
 height:100vh;
-padding: 10px;
+padding:10px;
 gap: .5rem;
 }
 .Events{
@@ -28,16 +28,9 @@ grid-area: 🏫;
 text-align: center;
 }
 .Hooch>p{
-font-size: 1.2vw;
+font-size: 18px;
 }
-.Leaders{
-grid-area: 🫅;
-text-align: center;
-}
-.Leaders>img{
-width:27vw;
-aspect-ratio: 16/9;
-}
+
 .Motto{
 grid-area: 🐕‍🦺;
 display: flex;
@@ -47,18 +40,7 @@ font-size: 24px;
 font-weight: 500;
 color: rgb(var(--accent));
 }
-.Quote{
-grid-area: 🦉;
-display: flex;
-align-items: center;
-justify-content: center;
-background-image:url(../Images/index/Quotebg.gif) ;
-background-position-y: center;
-background-size: cover;
-font-size: 150%;
-text-align: center;
-text-transform: uppercase;
-}
+
 .Pictures{
 grid-area: 📷;
 display: flex;
@@ -67,7 +49,7 @@ justify-content: center;
 .Meeting{
 grid-area: 🤝;
 text-align: center;
-margin-top: 10px;
+margin-top: 20px;
 }
 .Meeting-Grid{
 display: grid;
@@ -87,29 +69,16 @@ margin: 5px;
 font-size: 0.9vw;
 font-weight: 200;
 }
-.Beta{
-grid-area: ❓;
-text-align: center;
-margin-top: 10px;
-padding: 10px;
-}
-.Beta>p{
-font-size: 1.23vw;
-}
-.Beta>.Header{
-font-size: 18px;
-font-weight: 500;
-margin-bottom: 5px;
-}
+
 .slider{
-width: 333.3375px;
-height: 197.5px;
+width: 400px;
+height: 250px;
 border-radius: 10px;
 overflow: hidden;
 }
 .slides{
 width: 500%;
-height: 197.5px;
+height: 250px;
 display: flex;
 }
 .slides input{
@@ -120,13 +89,13 @@ width: 20%;
 transition: 2s;
 }
 .slide img{
-width: 333.3375px;
-height: 197.5px;
+width: 400px;
+height: 250px;
 }
 /* Css for manual slide navigation */
 .navigation-manual{
 position: absolute;
-width: 333.3375px;
+width: 400px;
 margin-top: 10px;
 display: flex;
 justify-content: center;
@@ -170,9 +139,9 @@ margin-left: -120%;
 .navigation-auto{
 position: absolute;
 display: flex;
-width: 333.3375px;
+width: 400px;
 justify-content: center;
-margin-top: 207.5px;
+margin-top: 260px;
 }
 .navigation-auto div{
 border: 2px solid rgb(var(--accent));
@@ -213,7 +182,7 @@ min-width: 320px;
 }
 .index{
 width: 100%;
-height: 30vh;
+height: 100%;
 border: none;
 min-width: 183px;
 }
@@ -221,21 +190,10 @@ min-width: 183px;
     main{
       display:block;
     }
-    .Hooch>p, .Beta>p{
+    .Hooch>p{
       font-size: 1.8vh;
     }
-    .Leaders{
-      margin-top: 10px;
-    }
-    .Leaders>img{
-      width: 30vh;
-    }
-    .Motto{
-      margin: 10px 0;
-    }
-    .Quote{
-      margin: 10px 0;
-    }
+
     .Pictures{
       margin-bottom: 30px;
     }
