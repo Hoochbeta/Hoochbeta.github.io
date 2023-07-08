@@ -180,8 +180,11 @@ iframe{
   footer{
     height: 3.5em;
   }
-  article>p, footer>p{
+  article>p{
     font-size: 1.5vh; 
+  }
+  footer>p{
+    font-size: 12px;
   }
   .Logo{
     position: fixed;

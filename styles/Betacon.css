@@ -3,23 +3,31 @@
     --bg: 16,16,16;
     --accent: 207, 181, 59; 
     --primary-dark:0,82, 95; 
+    --pic-width:500px;
 }
-
-p{
+.Betacon-Logo{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
+.top>p{
     text-align: center;
     font-size: 18px;
+    margin: 10px 0 10px 0;
 }
-p>span{
-    font-size: 24px;
-    margin: 10px;
+h1{
+    font-size: 32px;
     font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
 }
 .top{
     display: flex;
 }
 
 .slider{
-    width: 500px;
+    width: var(--pic-width);
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
@@ -38,13 +46,13 @@ p>span{
     transition: 2s;
     }
     .slide img{
-    width: 500px;
+    width: var(--pic-width);
     height: 300px;
     }
     /* Css for manual slide navigation */
     .navigation-manual{
     position: absolute;
-    width: 500px;
+    width: var(--pic-width);
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -80,7 +88,7 @@ p>span{
     .navigation-auto{
     position: absolute;
     display: flex;
-    width: 500px;
+    width: var(--pic-width);
     justify-content: center;
     margin-top: 310px;
     }
@@ -104,4 +112,16 @@ p>span{
     }
     #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: rgb(var(--accent));
+    }
+    @media (max-width:740px){
+        :root{
+            --pic-width:375px;
+        }
+        .top{
+            display: block;
+            
+        }
+    }
+    #betacon-wrap{
+        padding-bottom: 6em;
     }

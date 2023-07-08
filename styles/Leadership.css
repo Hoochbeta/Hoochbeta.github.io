@@ -32,6 +32,10 @@ main{
     background-color: #653496;
     color: #15b13c;
 }
+.Devon{
+    color: #0078ff;
+    background-color: #7040c8;
+}
 .box{
     height: 220px;
     width: 450px ;
@@ -87,4 +91,9 @@ main{
         align-items: center;
     }
     
+}
+@media (max-width:450px){
+    body{
+        overflow-x: visible;
+    }
 }
