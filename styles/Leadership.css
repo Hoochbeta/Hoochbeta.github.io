@@ -4,9 +4,87 @@
     --accent: 207, 181, 59; 
     --primary-dark:0,82, 95; 
 }
-i{
-    background-color: rgb(var(--primary));
-    color: rgb(var(--accent));
-    padding: 5px;
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+.Para{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+main{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    gap: 10px;
+    justify-content: center;
+}
+.ArianaS{
+    background-color:#3944BC;
+    color: #FD5DA8;
+}
+.Rachel{
+    background: rgb(34, 139, 34);
+    color: #454545;
+}
+.Rabiya{
+    background-color: #653496;
+    color: #15b13c;
+}
+.box{
+    height: 220px;
+    width: 450px ;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: 
+    "📷 📛"
+    "📷 🧑"
+    "👑 👑";
+    padding: 10px;
+
+}
+.Face{
+    grid-area: 📷;
     border-radius: 100%;
-  }
+    width: 120px;
+    margin: 10px;
+}
+.Name{
+    grid-area: 📛;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+.Crest{
+    border-radius: 100%;
+    width: 85px;
+}
+.Title{
+    grid-area: 👑;
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Mail{
+    margin-left: auto;
+    padding-right: 5px;
+}
+.About{
+    grid-area: 🧑;
+    font-size: 16px;
+    color: white;
+}
+@media (max-width:770px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

@@ -1,14 +1,3 @@
-document.getElementById('radio0').checked = true;
-setInterval(function(){
-    for (let i = 0; i < 7; i++){
-      if (document.getElementById('radio'+ String(i)).checked == true){
-        document.getElementById('radio'+ String(i)).checked = false;
-        document.getElementById('radio'+ String((i + 1) % 7)).checked = true;
-        break
-      }
-    }
-}, 5000);
-
 document.querySelectorAll(".subnavbtn").forEach(function(btn) {
     btn.addEventListener("click", function() {
       var subnavContent = this.nextElementSibling;
