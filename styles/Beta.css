@@ -35,7 +35,6 @@ a{
   height: 50px;
   border-radius: 5px;
   align-items: center;
-  transform: translate3d(0,0,0);
 }
 .School{
   font-size: 20px;
@@ -188,9 +187,8 @@ iframe{
     font-size: 12px;
   }
   .Logo{
-    position: fixed;
-    left: 0;
-    top: 15px;
+    position: absolute;
+    right: 10.7em;
     margin-left: 10px;
   }
   .navbar{
