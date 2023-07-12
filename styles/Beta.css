@@ -35,6 +35,7 @@ a{
   height: 50px;
   border-radius: 5px;
   align-items: center;
+  -webkit-transform: translateZ(0)
 }
 .School{
   font-size: 20px;
