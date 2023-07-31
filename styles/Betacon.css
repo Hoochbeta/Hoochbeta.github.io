@@ -5,6 +5,9 @@
     --primary-dark:0,82, 95; 
     --pic-width:500px;
 }
+Body{
+    overflow-y: hidden;
+}
 .Betacon-Logo{
     width: 200px;
     height: 200px;
@@ -116,6 +119,9 @@ h1{
     @media (max-width:740px){
         :root{
             --pic-width:375px;
+        }
+        Body{
+            overflow-y: auto;
         }
         .top{
             display: block;

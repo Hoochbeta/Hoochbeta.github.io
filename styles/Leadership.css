@@ -38,7 +38,7 @@ main{
 }
 .box{
     height: 220px;
-    width: 425px ;
+    width: 450px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
