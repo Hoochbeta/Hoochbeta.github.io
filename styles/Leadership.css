@@ -24,6 +24,14 @@ main{
     background-color:#3944BC;
     color: #FD5DA8;
 }
+.Aditya{
+    background: rgb(109, 3, 3);
+    color: #000000;
+}
+.Aneesh{
+    background: rgb(0, 71,171);
+    color: #140f0f;
+}
 .Rachel{
     background: rgb(34, 139, 34);
     color: #454545;
@@ -32,13 +40,21 @@ main{
     background-color: #653496;
     color: #15b13c;
 }
+.Natalie{
+    background-color: #9051cf;
+    color: #21cf50;
+}
 .Devon{
     color: #0078ff;
     background-color: #7040c8;
 }
+.Yanna{
+    background: #390f62;
+    color: orange;
+}
 .box{
     height: 220px;
-    width: 450px ;
+    width: 425px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
@@ -55,6 +71,8 @@ main{
     border-radius: 100%;
     width: 120px;
     margin: 10px;
+    height: 120px;
+
 }
 .Name{
     grid-area: 📛;
