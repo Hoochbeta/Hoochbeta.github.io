@@ -1,8 +1,8 @@
 :root{
   --primary:0, 98, 111;
-  --bg: 16,16,16;
+  --bg: 100,100,100;
   --accent: 207, 181, 59; 
-  --primary-dark:100,100,100; 
+  --primary-dark:0,82, 95; 
 }
 *{
   margin: 0;
