@@ -73,13 +73,13 @@ font-weight: 200;
 
 .slider{
 width: 400px;
-aspect-ratio: 16/10;
+aspect-ratio: 16/9;
 border-radius: 10px;
 overflow: hidden;
 }
 .slides{
 width: 500%;
-aspect-ratio: 16/10;
+aspect-ratio: 16/9;
 display: flex;
 }
 .slides input{
@@ -91,7 +91,7 @@ transition: 2s;
 }
 .slide img{
 width: 400px;
-aspect-ratio: 16/10;
+aspect-ratio: 16/9;
 }
 /* Css for manual slide navigation */
 .navigation-manual{

@@ -31,14 +31,14 @@ h1{
 
 .slider{
     width: var(--pic-width);
-    height: 300px;
+    aspect-ratio: 16/9;
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
     }
     .slides{
     width: 500%;
-    height: 300px;
+    aspect-ratio: 16/9;
     display: flex;
     }
     .slides input{
@@ -50,7 +50,7 @@ h1{
     }
     .slide img{
     width: var(--pic-width);
-    height: 300px;
+    aspect-ratio: 16/9;
     }
     /* Css for manual slide navigation */
     .navigation-manual{
