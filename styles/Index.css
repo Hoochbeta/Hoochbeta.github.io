@@ -73,13 +73,13 @@ font-weight: 200;
 
 .slider{
 width: 400px;
-aspect-ratio: 16/9;
+height: 250px;
 border-radius: 10px;
 overflow: hidden;
 }
 .slides{
 width: 500%;
-aspect-ratio: 16/9;
+height: 250px;
 display: flex;
 }
 .slides input{
@@ -91,13 +91,13 @@ transition: 2s;
 }
 .slide img{
 width: 400px;
-aspect-ratio: 16/9;
+height: 250px;
 }
 /* Css for manual slide navigation */
 .navigation-manual{
 position: absolute;
 width: 400px;
-margin-top: -890px;
+margin-top: 10px;
 display: flex;
 justify-content: center;
 }
@@ -142,7 +142,7 @@ position: absolute;
 display: flex;
 width: 400px;
 justify-content: center;
-margin-top: 235px;
+margin-top: 260px;
 }
 .navigation-auto div{
 border: 2px solid rgb(var(--accent));
