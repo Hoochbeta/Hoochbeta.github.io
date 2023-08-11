@@ -3,7 +3,7 @@
     --bg: 16,16,16;
     --accent: 207, 181, 59; 
     --primary-dark:0,82, 95; 
-    --pic-width:500px;
+    --pic-width:350px;
 }
 Body{
     overflow-y: hidden;
@@ -31,14 +31,14 @@ h1{
 
 .slider{
     width: var(--pic-width);
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
     }
     .slides{
     width: 500%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     display: flex;
     }
     .slides input{
@@ -50,13 +50,13 @@ h1{
     }
     .slide img{
     width: var(--pic-width);
-    aspect-ratio: 16/9;
+    aspect-ratio: 1/1;
     }
     /* Css for manual slide navigation */
     .navigation-manual{
     position: absolute;
     width: var(--pic-width);
-    margin-top: 10px;
+    margin-top: -1000px;
     display: flex;
     justify-content: center;
     }
@@ -93,7 +93,7 @@ h1{
     display: flex;
     width: var(--pic-width);
     justify-content: center;
-    margin-top: 310px;
+    margin-top: 295px;
     }
     .navigation-auto div{
     border: 2px solid rgb(var(--accent));
