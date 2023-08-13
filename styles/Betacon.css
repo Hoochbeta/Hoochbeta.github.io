@@ -3,10 +3,7 @@
     --bg: 16,16,16;
     --accent: 207, 181, 59; 
     --primary-dark:0,82, 95; 
-    --pic-width:500px;
-}
-Body{
-    overflow-y: hidden;
+    --pic-width:350px;
 }
 .Betacon-Logo{
     width: 200px;
@@ -31,14 +28,14 @@ h1{
 
 .slider{
     width: var(--pic-width);
-    height: 300px;
+    height: var(--pic-width);
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
     }
     .slides{
     width: 500%;
-    height: 300px;
+    height: var(--pic-width);
     display: flex;
     }
     .slides input{
@@ -50,7 +47,7 @@ h1{
     }
     .slide img{
     width: var(--pic-width);
-    height: 300px;
+    height: var(--pic-width);
     }
     /* Css for manual slide navigation */
     .navigation-manual{
@@ -93,7 +90,7 @@ h1{
     display: flex;
     width: var(--pic-width);
     justify-content: center;
-    margin-top: 310px;
+    margin-top: 360px;
     }
     .navigation-auto div{
     border: 2px solid rgb(var(--accent));
@@ -117,15 +114,8 @@ h1{
     background-color: rgb(var(--accent));
     }
     @media (max-width:740px){
-        :root{
-            --pic-width:375px;
-        }
-        Body{
-            overflow-y: auto;
-        }
         .top{
             display: block;
-            
         }
     }
     #betacon-wrap{
