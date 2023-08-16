@@ -90,7 +90,7 @@ main{
 }
 
 .box{
-    height: 220px;
+    height: 230px;
     width: 450px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -139,6 +139,9 @@ main{
     grid-area: 🧑;
     font-size: 16px;
     color: white;
+}
+#Leader-wrap{
+    padding-bottom: 6rem;
 }
 @media (max-width:770px){
     main{
