@@ -48,13 +48,50 @@ main{
     color: #0078ff;
     background-color: #7040c8;
 }
+
+.Stuti{
+    background-color:#967bb6;
+    color: #FD5DA8;
+}
+
 .Yanna{
     background: #390f62;
     color: orange;
 }
+
+.Emily{
+    background: #000080;
+    color: rgb(224, 164, 52);
+}
+
+.Vikhyat{
+    background: #03037f;
+    color: rgb(154, 146, 169);
+}
+
+.Ravnoor{
+    background: #272da2;
+    color: rgb(0, 0, 0);
+}
+
+.Shihyun{
+    background-color: grey;
+    color: #98540f;
+}
+
+.Osinachi{
+    background-color: rgba(255, 217, 0, 0.877);
+    color: black;
+}
+
+.Adarsh{
+    background-color: rgb(130, 4, 4);
+    color: #595756;
+}
+
 .box{
     height: 220px;
-    width: 450px ;
+    width: 425px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
