@@ -1,14 +1,14 @@
 :root{
---primary:0, 98, 111;
---bg: 16,16,16;
---accent: 207, 181, 59; 
---primary-dark:0,82, 95; 
---text-color:255,255,255; 
+  --bg: 16,16,16;/*Black*/
+  --primary:45, 45, 45;/*Gray*/
+  --accent: 207, 181, 59;/*Gold*/
+  --secondary:0, 98, 111;/*Green*/
+  --text-color:255,255,255;/*White*/ 
 }
 .header{
   text-align: center;
   margin-bottom: 10px;
-  color: rgb(var(--accent));
+  color: rgb(var(--text-color));
 }
 main{
 display: grid;
@@ -45,7 +45,7 @@ justify-content: center;
 align-items: center;
 font-size: 24px;
 font-weight: 500;
-color: rgb(var(--accent));
+color: rgb(var(--text-color));
 }
 
 .Pictures{
@@ -73,7 +73,7 @@ gap: .5rem;
 margin: 5px;
 }
 .dates{
-font-size: 0.9vw;
+font-size: .9vw;
 font-weight: 200;
 }
 
@@ -203,11 +203,24 @@ min-width: 183px;
     .Hooch>p{
       font-size: 1.8vh;
     }
-
     .Pictures{
       margin-bottom: 30px;
     }
     .dates{
       font-size: 12px;
     }
+    .navigation-manual{
+      width: 405px;
+    }
+    .navigation-auto{
+      width: 405px;
+    }
+}
+@media(max-width:400px){
+  .navigation-manual{
+    width: 355px;
+  }
+  .navigation-auto{
+    width: 355px;
+  }
 }

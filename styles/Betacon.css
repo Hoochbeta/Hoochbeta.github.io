@@ -1,9 +1,9 @@
 :root{
-    --primary:0, 98, 111;
-    --bg: 16,16,16;
-    --accent: 207, 181, 59; 
-    --primary-dark:0,82, 95;
-    --text-color:255,255,255; 
+    --bg: 16,16,16;/*Black*/
+    --primary:45, 45, 45;/*Gray*/
+    --accent: 207, 181, 59;/*Gold*/
+    --secondary:0, 98, 111;/*Green*/
+    --text-color:255,255,255;/*White*/ 
     --pic-width:350px;
 }
 .Betacon-Logo{
