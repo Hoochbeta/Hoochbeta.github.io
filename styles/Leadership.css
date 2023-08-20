@@ -2,7 +2,8 @@
     --primary:0, 98, 111;
     --bg: 16,16,16;
     --accent: 207, 181, 59; 
-    --primary-dark:0,82, 95; 
+    --primary-dark:0,82, 95;
+    --text-color::255,255,255;  
 }
 h1{
     text-align: center;
@@ -138,7 +139,7 @@ main{
 .About{
     grid-area: 🧑;
     font-size: 16px;
-    color: white;
+    color: rgb(var(--text-color));
 }
 #Leader-wrap{
     padding-bottom: 6rem;
