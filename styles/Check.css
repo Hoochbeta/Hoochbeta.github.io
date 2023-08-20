@@ -2,8 +2,8 @@
     --bg: 16,16,16;/*Black*/
     --primary:45, 45, 45;/*Gray*/
     --accent: 207, 181, 59;/*Gold*/
-    /*--secondary:50,50,50;Lighter Gray*/
-    --secondary:0, 70, 111;/*Green*/
+    --secondary:50,50,50;/*Lighter Gray*/
+    --Gradient:0, 70, 111;/*Green*/
     /*--secondary:5,75,116;Light Green*/
     --text-color:255,255,255;/*White*/  
 }
@@ -14,7 +14,7 @@
 }
 #row1{
     height: 25vh ;
-    background-image: linear-gradient(to right, rgb(var(--secondary)), rgb(var(--accent)) );
+    background-image: linear-gradient(to right, rgb(var(--Gradient)), rgb(var(--accent)) );
 }
 #row1,.hours, .meeting, .vary{
     display: flex;
