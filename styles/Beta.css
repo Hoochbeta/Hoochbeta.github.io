@@ -81,7 +81,7 @@ a{
 .subnav-content {
   display: none;
   position: absolute;
-  background-color: rgb(var(--secondary));
+  background-color: rgb(var(--primary));
   min-width: 160px;
   z-index: 1;
   border-radius: 5px;
