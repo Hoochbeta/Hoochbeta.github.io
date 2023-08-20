@@ -2,7 +2,9 @@
   --bg: 16,16,16;/*Black*/
   --primary:45, 45, 45;/*Gray*/
   --accent: 207, 181, 59;/*Gold*/
-  --secondary:0, 98, 111;/*Green*/
+  --secondary:50,50,50;/*Lighter Gray*/
+  /*--primary:0, 70, 111;Green
+  --secondary:5,75,116;Light Green*/
   --text-color:255,255,255;/*White*/  
 }
 *{
@@ -79,7 +81,7 @@ a{
 .subnav-content {
   display: none;
   position: absolute;
-  background-color: rgb(var(--primary));
+  background-color: rgb(var(--secondary));
   min-width: 160px;
   z-index: 1;
   border-radius: 5px;
@@ -125,6 +127,7 @@ a{
 }
 i{
   transform: translate(4px,1.75px);
+  color: rgb(var(--accent));
 }
 .brands{
   display: flex;
