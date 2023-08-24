@@ -7,14 +7,21 @@
     --secondary:5,75,116;Light Green*/
     --text-color:255,255,255;/*White*/  
 }
+
+
+
 h1{
     text-align: center;
     font-size: 36px;
+    padding:10px
 }
 .Para{
     font-size: 20px;
     padding: 10px;
     text-align: center;
+    font-weight:300;
+    padding-left:50px; 
+    padding-right:50px;
 }
 main{
     margin-top: 10px;
@@ -24,77 +31,77 @@ main{
     justify-content: center;
 }
 .ArianaS{
-    background-color:#3944BC;
-    color: #FD5DA8;
+    background: #967117; 
+    color: #000000;
 }
 .Aditya{
-    background: rgb(109, 3, 3);
+    background: #967117; 
     color: #000000;
 }
 .Aneesh{
-    background: rgb(0, 71,171);
-    color: #140f0f;
+    background: #967117; 
+    color: #000000;
 }
 .Rachel{
-    background: rgb(34, 139, 34);
-    color: #454545;
+    background: #967117; 
+    color: #000000;
 }
 .Rabiya{
-    background-color: #653496;
-    color: #15b13c;
+    background: #967117; 
+    color: #000000;
 }
 .Natalie{
-    background-color: #9051cf;
-    color: #21cf50;
+    background: #967117;  
+    color: #000000;
 }
 .Devon{
-    color: #0078ff;
-    background-color: #7040c8;
+    color: #000000;
+    background-color: #967117;
 }
 
 .Stuti{
-    background-color:#967bb6;
-    color: #FD5DA8;
+    background: #967117; 
+    color: #000000;
 }
 
 .Yanna{
-    background: #390f62;
-    color: orange;
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Emily{
-    background: #000080;
-    color: rgb(224, 164, 52);
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Vikhyat{
-    background: #03037f;
-    color: rgb(154, 146, 169);
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Ravnoor{
-    background: #272da2;
+    background: #967117; 
     color: rgb(0, 0, 0);
 }
 
 .Shihyun{
-    background-color: grey;
-    color: #98540f;
+    background: #967117; 
+    color: #000000;
 }
 
 .Osinachi{
-    background-color: rgba(255, 217, 0, 0.877);
+    background: #967117; 
     color: black;
 }
 
 .Adarsh{
-    background-color: rgb(130, 4, 4);
-    color: #595756;
+    background: #967117; 
+    color: #000000;
 }
 
 .box{
-    height: 230px;
-    width: 450px ;
+    height: 220px;
+    width: 425px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
@@ -140,9 +147,11 @@ main{
 }
 .About{
     grid-area: 🧑;
-    font-size: 16px;
-    color: rgb(var(--text-color));
+    font-size: 15px;
+    margin-top: 5px;
+    color: rgb(33, 33, 33);
 }
+
 #Leader-wrap{
     padding-bottom: 6rem;
 }
