@@ -97,8 +97,8 @@ main{
 }
 
 .box{
-    height: 220px;
-    width: 450px ;
+    height: 240px;
+    width: 400px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
