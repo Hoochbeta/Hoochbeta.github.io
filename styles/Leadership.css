@@ -148,7 +148,7 @@ main{
     grid-area: 🧑;
     font-size: 15px;
     margin-top: 5px;
-    color: rgb(33, 33, 33);
+    color: rgb(var(--primary));
 }
 
 #Leader-wrap{
