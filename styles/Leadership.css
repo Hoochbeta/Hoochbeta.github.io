@@ -8,8 +8,6 @@
     --text-color:255,255,255;/*White*/  
 }
 
-
-
 h1{
     text-align: center;
     font-size: 36px;
@@ -31,77 +29,77 @@ main{
     justify-content: center;
 }
 .ArianaS{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 .Aditya{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 .Aneesh{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 .Rachel{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 .Rabiya{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 .Natalie{
-    background: #967117;  
+    background: rgb(var(--accent));  
     color: #000000;
 }
 .Devon{
     color: #000000;
-    background-color: #967117;
+    background-color: rgb(var(--accent));
 }
 
 .Stuti{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 
 .Yanna{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: rgb(0, 0, 0);
 }
 
 .Emily{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: rgb(0, 0, 0);
 }
 
 .Vikhyat{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: rgb(0, 0, 0);
 }
 
 .Ravnoor{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: rgb(0, 0, 0);
 }
 
 .Shihyun{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 
 .Osinachi{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: black;
 }
 
 .Adarsh{
-    background: #967117; 
+    background: rgb(var(--accent)); 
     color: #000000;
 }
 
 .box{
     height: 220px;
-    width: 425px ;
+    width: 450px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
@@ -127,12 +125,13 @@ main{
     font-size: 20px;
     font-weight: 500;
     align-items: center;
-    margin: auto;
     gap: 10px;
 }
 .Crest{
     border-radius: 100%;
     width: 85px;
+    margin-left: auto;
+    padding-right: 5px;
 }
 .Title{
     grid-area: 👑;
@@ -166,5 +165,9 @@ main{
 @media (max-width:450px){
     body{
         overflow-x: visible;
+    }
+    .box{
+        height: 250px;
+        width: 400px ;
     }
 }
