@@ -7,6 +7,9 @@
     --secondary:5,75,116;Light Green*/
     --text-color:255,255,255;/*White*/  
 }
+
+
+
 h1{
     text-align: center;
     font-size: 36px;
@@ -28,77 +31,77 @@ main{
     justify-content: center;
 }
 .ArianaS{
-    background: rgb(var(--primary)); 
-    color: #FA86C4;
+    background: #967117; 
+    color: #000000;
 }
 .Aditya{
-    background: rgb(var(--primary)); 
-    color: #a50404;
+    background: #967117; 
+    color: #000000;
 }
 .Aneesh{
-    background: rgb(var(--primary)); 
-    color: #056ca8;
+    background: #967117; 
+    color: #000000;
 }
 .Rachel{
-    background: rgb(var(--primary)); 
-    color: #1e741e;
+    background: #967117; 
+    color: #000000;
 }
 .Rabiya{
-    background: rgb(var(--primary)); 
-    color: #0e9f33;
+    background: #967117; 
+    color: #000000;
 }
 .Natalie{
-    background: rgb(var(--primary));  
-    color: #a75fef;
+    background: #967117;  
+    color: #000000;
 }
 .Devon{
-    background-color:rgb(var(--primary)) ;
-    color: #1338BE;
+    color: #000000;
+    background-color: #967117;
 }
 
 .Stuti{
-    background: rgb(var(--primary)); 
-    color: #967bb6;
+    background: #967117; 
+    color: #000000;
 }
 
 .Yanna{
-    background: rgb(var(--primary)); 
-    color: #6700cd;
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Emily{
-    background: rgb(var(--primary)); 
-    color: #e0a434;
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Vikhyat{
-    background: rgb(var(--primary)); 
-    color: #8c7ea6;
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Ravnoor{
-    background: rgb(var(--primary)); 
-    color: #3942e6;
+    background: #967117; 
+    color: rgb(0, 0, 0);
 }
 
 .Shihyun{
-    background: rgb(var(--primary)); 
-    color: #98540f;
+    background: #967117; 
+    color: #000000;
 }
 
 .Osinachi{
-    background: rgb(var(--primary)); 
-    color: #dcc542;
+    background: #967117; 
+    color: black;
 }
 
 .Adarsh{
-    background: rgb(var(--primary)); 
-    color: #ADD8E6;
+    background: #967117; 
+    color: #000000;
 }
 
 .box{
     height: 220px;
-    width: 450px ;
+    width: 425px ;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 150px 1fr;
@@ -124,13 +127,12 @@ main{
     font-size: 20px;
     font-weight: 500;
     align-items: center;
+    margin: auto;
     gap: 10px;
 }
 .Crest{
     border-radius: 100%;
     width: 85px;
-    margin-left: auto;
-    padding-right: 5px;
 }
 .Title{
     grid-area: 👑;
@@ -147,11 +149,11 @@ main{
     grid-area: 🧑;
     font-size: 15px;
     margin-top: 5px;
-    color: rgb(var(--text-color));
+    color: rgb(33, 33, 33);
 }
 
 #Leader-wrap{
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
 }
 @media (max-width:770px){
     main{
@@ -164,9 +166,5 @@ main{
 @media (max-width:450px){
     body{
         overflow-x: visible;
-    }
-    .box{
-        height: 240px;
-        width: 400px;
     }
 }
