@@ -1,0 +1,24 @@
+:root{
+    --bg: 16,16,16;/*Black*/
+    --primary:45, 45, 45;/*Gray*/
+    --accent: 207, 181, 59;/*Gold*/
+    --secondary:50,50,50;/*Lighter Gray*/
+    /* --Green:0, 70, 111;Green */
+    /* --Green:5,75,116;Light Green */
+    --text-color:255,255,255;/*White*/  
+    --pic-width:350px;
+}
+.Questions{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(var(--accent));
+}
+.Answers{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(var(--text-color));
+}
+.FAQ-wrap{
+    padding-bottom: 10rem;
+    position: relative;
+  }
