@@ -29,7 +29,7 @@ z-index: -2;
 }
 .Events{
 grid-area: 📅;
-padding: 0 10px;
+padding-right: 10px;
 text-align: center;
 z-index: 0;
 }
