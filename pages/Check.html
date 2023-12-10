@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hour Count</title>
+    <link rel="stylesheet" href="../styles/Table.css">
     <link rel="stylesheet" href="../styles/Beta.css">
     <link rel="stylesheet" href="../styles/Check.css">
     <link rel="shortcut icon" href="../Images/Favicon.png" type="image/x-icon">
@@ -55,7 +56,12 @@
      </div>
     </ul>
    </nav>
-   <iframe loading="lazy" class="Check" src="https://script.google.com/macros/s/AKfycbweSPnYKtYZZCMRAsXeIOCbFvhHVwAjE1QQ32d2JKXlUkEyOmwNO-BCUoTKvE7vLLah/exec"></iframe>
+   <div class="search-container">
+    <input type="text" id="myInput" placeholder="Search for your name">
+    <button type="submit"onclick="Search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+   <table id="myTable"></table>
+   <!-- <iframe loading="lazy" class="Check" src="https://script.google.com/macros/s/AKfycbweSPnYKtYZZCMRAsXeIOCbFvhHVwAjE1QQ32d2JKXlUkEyOmwNO-BCUoTKvE7vLLah/exec"></iframe> -->
    <div id="row1">
     <div class="hours">Minimum of 10 hours per Semester</div>
     <div class="meeting">Attend all meetings</div>
@@ -67,5 +73,6 @@
   </footer>
 </div>
   <script src="../Beta.js"></script>
+  <script src="../Total Hours.js"></script>
 </body>
 </html>

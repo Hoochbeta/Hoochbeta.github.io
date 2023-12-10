@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denied Hours</title>
+    <link rel="stylesheet" href="../styles/Table.css">
     <link rel="stylesheet" href="../styles/Beta.css">
     <link rel="stylesheet" href="../styles/Index.css">
     <script src="https://kit.fontawesome.com/2aa51cc09e.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../Images/Favicon.png" type="image/x-icon">
+    <style>
+          th:nth-child(n+2):nth-child(-n+4),td:nth-child(n+2):nth-child(-n+4),th:nth-child(7),td:nth-child(7),th:nth-child(9),td:nth-child(9),
+th:nth-child(n+11):nth-child(-n+12),td:nth-child(n+11):nth-child(-n+12),th:nth-child(n+14):nth-child(-n+16),td:nth-child(n+14):nth-child(-n+16){
+  display:none;
+}
+    </style>
 </head>
 <body>
  <div id="page-container" >
@@ -55,11 +62,17 @@
          </div>
         </ul>
        </nav>
-       <iframe loading="lazy" src="https://script.google.com/macros/s/AKfycbzMEIyLbR5rMScbkav6mcaanRnPZUxFpqHN6PR7wfX4s25kslu8Pxd9oo7vDO5gMVLC/exec"></iframe>
+       <div class="search-container">
+        <input type="text" id="myInput" placeholder="Search for your name">
+        <button type="submit"onclick="Search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+       <table id="myTable"></table>
+       <!-- <iframe loading="lazy" src="https://script.google.com/macros/s/AKfycbzMEIyLbR5rMScbkav6mcaanRnPZUxFpqHN6PR7wfX4s25kslu8Pxd9oo7vDO5gMVLC/exec"></iframe> -->
       <footer class="index-footer">
         <p>© Chattahoochee High School</p>
       </footer>
     </div>
     <script src="../Beta.js"></script>
+    <script src="../Denied.js"></script>
 </body>
 </html>
