@@ -3,9 +3,7 @@
 // console.log(process.env.SHEET_ID);
 const sheetId = '1_TqXw7VT6zhW4kBOSIOJf51Zm4KnlykC60VSvaG2BM8';
 const sheetTitle = 'Total Hours';
-
 let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + sheetId + '/gviz/tq?sheet=' + sheetTitle);
-console.log(FULL_URL);
 fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
