@@ -1,0 +1,32 @@
+---
+import "../styles/Beta.css";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="../../public/Favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="description"
+      content="Welcome to Chattahoochee Beta Club's Homepage! Chattahoochee Beta Club serves as a platform through which students can volunteer in their community."
+    />
+    <meta
+      name="keywords"
+      content="Hoochbeta, hoochbeta, Chattahoochee Beta Club, High School Beta Club, Chattahoochee Beta, Chattahoochee High School Beta Club"
+    />
+    <meta
+      name="google-site-verification"
+      content="pOef4cZcJ4rAHmSfkSKnocK_RtrTZWgzmzhLzZWzqQc"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script
+      src="https://kit.fontawesome.com/2aa51cc09e.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <slot> Default</slot>
+  </body>
+</html>

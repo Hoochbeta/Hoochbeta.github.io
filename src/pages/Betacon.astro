@@ -1,0 +1,78 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/Betacon.css";
+import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<MainLayout title="Betacon">
+  <Navbar />
+  <h1>Betacon</h1>
+  <div class="top">
+    <img src="../Images/Betacon/Betacon Logo.png" class="Betacon-Logo" />
+    <p>
+      Georgia Betacon is a state-wide convention during which members of
+      National Beta all throughout Georgia gather in savannah and compete in a
+      variety of competitions - ranging from subjects like agricultural science
+      to poetry. Some tests are conducted online, while other competitions (such
+      as live quizbowl or engineering) are conducted in person. In addition to
+      presenting the awards for these competitions, state officer candidates run
+      and are elected to office at the end of the convention. State Betacon is a
+      competitive, fun environment in which Beta members can meet new people,
+      compete (and win), and explore Savannah, Georgia!
+    </p>
+  </div>
+  <!--image slider start-->
+  <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio0" />
+      <input type="radio" name="radio-btn" id="radio1" />
+      <input type="radio" name="radio-btn" id="radio2" />
+      <input type="radio" name="radio-btn" id="radio3" />
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="../Images/Betacon/Con1.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../Images/Betacon/Con2.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../Images/Betacon/Con3.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="../Images/Betacon/con4.png" alt="" />
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn0"></div>
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio0" class="manual-btn"></label>
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+</MainLayout>
+<script>
+  setInterval(function () {
+    for (let i = 0; i < 4; i++) {
+      if (document.getElementById("radio" + String(i)).checked == true) {
+        document.getElementById("radio" + String(i)).checked = false;
+        document.getElementById("radio" + String((i + 1) % 4)).checked = true;
+        break;
+      }
+    }
+  }, 5000);
+</script>

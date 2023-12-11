@@ -32,6 +32,7 @@ grid-area: 📅;
 padding-right: 10px;
 text-align: center;
 z-index: 0;
+overflow: hidden;
 }
 .Hooch{
 grid-area: 🏫;
@@ -201,9 +202,7 @@ min-width: 183px;
     main{
       display:block;
     }
-    .index{
-      height: 35vh;
-    }
+
     .Hooch>p{
       font-size: 1.8vh;
     }

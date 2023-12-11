@@ -154,16 +154,11 @@ footer{
   margin-top: 2px;
   padding: 1rem 2rem;
   width: 100vw;
-  bottom: 0;
   height: 3.5rem;
   z-index: -1;
-  position: fixed;
   bottom: 0;
   display: flex;
   align-items:center;
-}
-.index-footer{
-  position: absolute;
 }
 article{
   margin: 10px;
@@ -190,11 +185,9 @@ iframe{
   Body{
     overflow-x: hidden;
   }
-  .index-wrap{
-    padding-bottom: 26em;
-  }
   footer{
     height: 3.5em;
+    margin-top: auto;
   }
   article>p{
     font-size: 1.5vh; 
