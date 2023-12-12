@@ -66,11 +66,19 @@ import Navbar from "../components/Navbar.astro";
   <!--image slider end-->
 </MainLayout>
 <script>
+  const radio0 = document.getElementById("radio0") as HTMLInputElement;
+  radio0.checked = true;
   setInterval(function () {
     for (let i = 0; i < 4; i++) {
-      if (document.getElementById("radio" + String(i)).checked == true) {
-        document.getElementById("radio" + String(i)).checked = false;
-        document.getElementById("radio" + String((i + 1) % 4)).checked = true;
+      let radio = document.getElementById(
+        "radio" + String(i)
+      ) as HTMLInputElement;
+      let radio_next = document.getElementById(
+        "radio" + String((i + 1) % 4)
+      ) as HTMLInputElement;
+      if (radio.checked == true) {
+        radio.checked = false;
+        radio_next.checked = true;
         break;
       }
     }

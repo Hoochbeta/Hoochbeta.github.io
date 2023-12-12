@@ -113,12 +113,19 @@ import Footer from "../components/Footer.astro";
   </main>
 </MainLayout>
 <script>
-  document.getElementById("radio0").checked = true;
+  const radio0 = document.getElementById("radio0") as HTMLInputElement;
+  radio0.checked = true;
   setInterval(function () {
     for (let i = 0; i < 7; i++) {
-      if (document.getElementById("radio" + String(i)).checked == true) {
-        document.getElementById("radio" + String(i)).checked = false;
-        document.getElementById("radio" + String((i + 1) % 7)).checked = true;
+      let radio = document.getElementById(
+        "radio" + String(i)
+      ) as HTMLInputElement;
+      let radio_next = document.getElementById(
+        "radio" + String((i + 1) % 7)
+      ) as HTMLInputElement;
+      if (radio.checked == true) {
+        radio.checked = false;
+        radio_next.checked = true;
         break;
       }
     }
