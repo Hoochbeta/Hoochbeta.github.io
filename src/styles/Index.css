@@ -1,5 +1,5 @@
 :root{
-  --bg: 16,16,16;/*Black*/
+  --bg: 32,32,32;/*Black*/
   --primary:45, 45, 45;/*Gray*/
   --accent: 207, 181, 59;/*Gold*/
   --secondary:50,50,50;/*Lighter Gray*/
@@ -10,6 +10,8 @@
 .header{
   text-align: center;
   margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left:20rem;
   color: rgb(var(--text-color));
 }
 main{
@@ -38,8 +40,14 @@ overflow: hidden;
 grid-area: 🏫;
 text-align: center;
 }
+
 .Hooch>p{
 font-size: 18px;
+}
+.Hooch_Title{
+  font-size: 24px !important;
+  margin-top: 10px;
+  color: rgb(var(--accent));
 }
 
 .Motto{
@@ -61,7 +69,7 @@ justify-content: center;
 .Meeting{
 grid-area: 🤝;
 text-align: center;
-margin-top: 20px;
+margin-top: 30px;
 }
 .Meeting-Grid{
 display: grid;

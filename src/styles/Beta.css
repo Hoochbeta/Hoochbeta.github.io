@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 :root{
-  --bg: 16,16,16;/*Black*/
+  --bg: 32,32,32;/*Black*/
   --primary:45, 45, 45;/*Gray*/
   --accent: 207, 181, 59;/*Gold*/
   --secondary:50,50,50;/*Lighter Gray*/
