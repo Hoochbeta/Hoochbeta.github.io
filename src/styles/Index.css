@@ -210,7 +210,9 @@ min-width: 183px;
     main{
       display:block;
     }
-
+    .header{
+      margin-left:0px;
+    }
     .Hooch>p{
       font-size: 1.8vh;
     }
