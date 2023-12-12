@@ -18,7 +18,7 @@ Body{
   background-color: rgb(var(--bg));
   list-style: none;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: rgb(var(--text-color));
   max-width: 100vw;
 }
