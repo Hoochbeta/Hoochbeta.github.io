@@ -31,7 +31,6 @@ import "../styles/Denied.css";
     .then((res) => res.text())
     .then((rep) => {
       let data = JSON.parse(rep.substring(47).slice(0, -2));
-      console.log(data);
 
       const Table = document.getElementById("myTable");
       const columns = data.table.cols.length;
