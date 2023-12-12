@@ -92,6 +92,7 @@ import "../styles/Beta.css";
   document.querySelector(".close-btn").addEventListener("click", function () {
     var navbar = document.querySelector(".navbar");
     navbar.classList.remove("active");
-    document.getElementsByClassName(".menu-btn").style.visibility = "visible";
+    const menubtn = document.getElementsByClassName(".menu-btn") as any;
+    menubtn.style.visibility = "visible";
   });
 </script>
