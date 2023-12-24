@@ -90,9 +90,9 @@ import "../styles/Beta.css";
   });
 
   document.querySelector(".close-btn").addEventListener("click", function () {
+    const menubtn = document.querySelector(".menu-btn") as any;
+    menubtn.style.visibility = "visible";
     var navbar = document.querySelector(".navbar");
     navbar.classList.remove("active");
-    const menubtn = document.getElementsByClassName(".menu-btn") as any;
-    menubtn.style.visibility = "visible";
   });
 </script>
