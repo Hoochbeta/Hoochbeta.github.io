@@ -26,7 +26,7 @@
     .search-container {
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 100vw;
       padding: 10px;
     }
     
@@ -64,9 +64,4 @@
     }
     ::-webkit-scrollbar-corner{
       background-color: rgb(var(--bg));
-    }
-    @media(max-width:740px){
-      .search-container{
-        width: 852px;
-      }
     }
