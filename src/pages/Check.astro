@@ -100,11 +100,15 @@ import "../styles/Check.css";
     }
   }
 
-  Table();
-  var input = document.getElementById("myInput");
-  input.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      Search();
-    }
-  });
+  try {
+    Table();
+    var input = document.getElementById("myInput");
+    input.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        Search();
+      }
+    });
+  } catch (error) {
+    console.log("Table Error");
+  }
 </script>
