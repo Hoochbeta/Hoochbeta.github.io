@@ -1,9 +1,4 @@
-:root{
-    --primary:0, 98, 111;
-    --bg: 16,16,16;
-    --accent: 207, 181, 59; 
-    --primary-dark:0,82, 95; 
-    }
+@import url("Root.css");
     table{
       text-align: center;
       padding: 10px;
