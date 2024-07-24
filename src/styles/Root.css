@@ -3,6 +3,7 @@
     --primary:45, 45, 45;/*Gray*/
     --accent: 207, 181, 59;/*Gold*/
     --secondary:50,50,50;/*Lighter Gray*/
-    --text-color:255,255,255;/*White*/  
+    --text-color:255,255,255;/*White*/
+    --Gradient:0, 70, 111;/*Green*/  
     --pic-width:350px;
 }
