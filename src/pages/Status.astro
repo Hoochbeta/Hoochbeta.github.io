@@ -26,7 +26,6 @@ import "../styles/Denied.css";
     sheetId +
     "/gviz/tq?sheet=" +
     sheetTitle;
-  console.log(FULL_URL);
   fetch(FULL_URL)
     .then((res) => res.text())
     .then((rep) => {

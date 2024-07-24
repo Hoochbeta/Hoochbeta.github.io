@@ -15,8 +15,7 @@ import "../styles/Check.css";
     >
   </div>
   <table id="myTable"></table>
-  <!-- <iframe loading="lazy" class="Check" src="https://script.google.com/macros/s/AKfycbweSPnYKtYZZCMRAsXeIOCbFvhHVwAjE1QQ32d2JKXlUkEyOmwNO-BCUoTKvE7vLLah/exec"></iframe> -->
-  <div id="row1">
+    <div id="row1">
     <div class="hours">Minimum of 10 hours per Semester</div>
     <div class="meeting">Attend all meetings</div>
     <div class="vary">Have at least 3 different types of hours</div>
@@ -32,7 +31,6 @@ import "../styles/Check.css";
       sheetId +
       "/gviz/tq?sheet=" +
       sheetTitle;
-    console.log(FULL_URL);
     fetch(FULL_URL)
       .then((res) => res.text())
       .then((rep) => {
