@@ -5,10 +5,10 @@ import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://Hoochbeta.vercel.app',
-  integrations: [sitemap()],
   output: 'server',
   adapter: vercel({
     webAnalytics: { enabled: true }
   }),
+  site: 'https://Hoochbeta.vercel.app',
+  integrations: [sitemap()],
 });
