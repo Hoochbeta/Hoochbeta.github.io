@@ -3,6 +3,7 @@
       text-align: center;
       padding: 10px;
       display: none;
+      width: 100vw;
     }
     th{
       font-size: 18px;
