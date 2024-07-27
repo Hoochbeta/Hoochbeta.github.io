@@ -7,7 +7,7 @@
 #row1{
     margin-top: 10px;
     height: 25vh ;
-    background-image: linear-gradient(to right, rgb(var(--Gradient)), rgb(var(--accent)) );
+    background-image: linear-gradient(to right, rgb(var(--primary)), rgb(var(--accent)) );
 }
 #row1,.hours, .meeting, .vary{
     display: flex;

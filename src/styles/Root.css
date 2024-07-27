@@ -1,9 +1,14 @@
 :root{
-    --bg: 16,16,16;/*Black*/
-    --primary:45, 45, 45;/*Gray*/
+    --bg: 248, 239, 228;/*Cream*/
+    --primary:230, 194, 191;/*Rosewater */
     --accent: 207, 181, 59;/*Gold*/
-    --secondary:50,50,50;/*Lighter Gray*/
-    --text-color:255,255,255;/*White*/
+    --text-color:40, 33, 32;/*Jet Black*/
     --Gradient:0, 70, 111;/*Green*/  
     --pic-width:350px;
 }
+
+/*Rosewater - #E6C2BF
+Cream - #F8EFE4
+Old Gold - #CFB53B
+Jet Black - #282120
+*/
