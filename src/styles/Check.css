@@ -4,6 +4,9 @@
     height: 51vh;
     border: none;
 }
+.fa-solid{
+    color: rgb(var(--text-color));
+}
 #row1{
     margin-top: 10px;
     height: 25vh ;
