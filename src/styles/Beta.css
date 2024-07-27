@@ -164,6 +164,9 @@ iframe{
   width: 100%;
   height: 80vh;
 }
+.fa-solid{
+  color: rgb(var(--text-color));
+}
 @media(max-width:768px){
   .index-wrap{
     padding-bottom: 20rem;
