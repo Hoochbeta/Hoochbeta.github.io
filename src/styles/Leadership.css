@@ -74,7 +74,7 @@ main{
     grid-area: 🧑;
     font-size: 15px;
     margin-top: 5px;
-    color: rgb(var(--primary));
+    color: rgb(var(--text-color));
 }
 
 #Leader-wrap{
