@@ -2,6 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import LeaderCard from "../components/LeaderCard.astro";
 import "../styles/Leadership.css";
 ---
 
@@ -277,22 +278,6 @@ import "../styles/Leadership.css";
       </p>
     </div>
 
-    <div class="box Aneesh">
-      <img class="Face" src="../Images/Leaders/Aneesh.jpg" />
-      <p class="Name">
-        Aneesh Anil
-        <img class="Crest" src="../Images/Crests/Aneesh_Crest.png" alt="" />
-      </p>
-      <p class="Title">
-        Webmaster
-        <a href="mailto:aneesh.anil@yahoo.com" class="Mail" target="_blank">
-          <i class="fa-solid fa-envelope Aneesh"></i>
-        </a>
-      </p>
-      <p class="About">
-        I am a Junior at Hooch. My dream is to become an automobile engineer. In
-        my free time I play video games with my friends and 3D model.
-      </p>
-    </div>
+    <LeaderCard Name = "Aneesh Anil", Title = "Webmaster", About = "I am a Senior at Hooch. My dream is to become an automobile engineer. In my free time I play video games with my friends and 3D model.", Image = "Aneesh" , Mail = "aneesh.anil@yahoo.com" />
   </main>
 </MainLayout>

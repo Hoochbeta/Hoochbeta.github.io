@@ -1,0 +1,22 @@
+---
+import "../styles/Beta.css";
+import "../styles/Leadership.css";
+const {Name, Title, About, Image, Mail} = Astro.props
+---
+
+<div class="box">
+    <img class="Face" src=`../Images/Leaders/${Image}.png` />
+    <p class="Name">
+      {Name}
+      <img class="Crest" src="../Images/Crests/Rachel crest.png" alt="" />
+    </p>
+    <p class="Title">
+      {Title}
+      <a href=`mailto:${Mail}` class="Mail">
+        <i class="fa-solid fa-envelope Mail Rachel"></i>
+      </a>
+    </p>
+    <p class="About">
+      {About}
+    </p>
+  </div>

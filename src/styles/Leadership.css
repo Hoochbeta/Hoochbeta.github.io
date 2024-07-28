@@ -20,74 +20,6 @@ main{
     gap: 10px;
     justify-content: center;
 }
-.ArianaS{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-.Aditya{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-.Aneesh{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-.Rachel{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-.Rabiya{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-.Natalie{
-    background: rgb(var(--accent));  
-    color: #000000;
-}
-.Devon{
-    color: #000000;
-    background-color: rgb(var(--accent));
-}
-
-.Stuti{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-
-.Yanna{
-    background: rgb(var(--accent)); 
-    color: rgb(0, 0, 0);
-}
-
-.Emily{
-    background: rgb(var(--accent)); 
-    color: rgb(0, 0, 0);
-}
-
-.Vikhyat{
-    background: rgb(var(--accent)); 
-    color: rgb(0, 0, 0);
-}
-
-.Ravnoor{
-    background: rgb(var(--accent)); 
-    color: rgb(0, 0, 0);
-}
-
-.Shihyun{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
-
-.Osinachi{
-    background: rgb(var(--accent)); 
-    color: black;
-}
-
-.Adarsh{
-    background: rgb(var(--accent)); 
-    color: #000000;
-}
 
 .box{
     height: 220px;
@@ -101,6 +33,8 @@ main{
     "👑 👑";
     padding: 10px;
     border-radius: 5px;
+    background: rgb(var(--primary)); 
+    color: #000000;
 
 }
 .Face{
