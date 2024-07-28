@@ -22,59 +22,59 @@ import "../styles/Check.css";
   </div>
 </MainLayout>
 <script>
-  const sheetId = "1EoDXEyLlFEsM4zm0R-SbDQBtrkESwlBMIjY3nK09Jfs";
+  let SheetId = ["1EoDXEyLlFEsM4zm0R-SbDQBtrkESwlBMIjY3nK09Jfs", "11b-s64xFqXlY35cEo9u_Hxbp05iNPRfYYmQByYKmXck","1nROfONPcJ-J27Doj8Y2ByKt7dZEIO3TNQCfAqKb_6KI"];  
   const sheetTitle = "Total Hours";
+  let randInt = Math.floor(Math.random()*3);
+  
+  const FULL_URL = "https://docs.google.com/spreadsheets/d/" + SheetId[randInt] + "/gviz/tq?sheet=" + sheetTitle;
+  fetch(FULL_URL)
+    .then((res) => res.text())
+    .then((rep) => {
+      let data = JSON.parse(rep.substring(47).slice(0, -2));
 
-  function Table() {
-    let FULL_URL =
-      "https://docs.google.com/spreadsheets/d/" +
-      sheetId +
-      "/gviz/tq?sheet=" +
-      sheetTitle;
-    fetch(FULL_URL)
-      .then((res) => res.text())
-      .then((rep) => {
-        let data = JSON.parse(rep.substring(47).slice(0, -2));
+      const Table = document.getElementById("myTable");
+      const columns = data.table.cols.length;
+      const rows = data.table.rows.length;
 
-        const Table = document.getElementById("myTable");
-        const columns = data.table.cols.length;
-        const rows = data.table.rows.length;
+      const TableRow = document.createElement("tr");
+      Table.append(TableRow);
+      for (let j = 0; j < columns; j++) {
+        const TableHeader = document.createElement("th");
+        TableRow.append(TableHeader);
+        try {
+          TableHeader.innerHTML = data.table.cols[j].label;
+        } catch (error) {
+          TableHeader.innerHTML = "";
+        }
+      }
 
+      for (let i = 0; i < rows; i++) {
         const TableRow = document.createElement("tr");
         Table.append(TableRow);
-        for (let j = 0; j < columns; j++) {
-          const TableHeader = document.createElement("th");
-          TableRow.append(TableHeader);
+        for (let k = 0; k < columns; k++) {
+          const Cell = document.createElement("td");
+          TableRow.append(Cell);
           try {
-            TableHeader.innerHTML = data.table.cols[j].label;
-          } catch (error) {
-            TableHeader.innerHTML = "";
-          }
-        }
-
-        for (let i = 0; i < rows; i++) {
-          const TableRow = document.createElement("tr");
-          Table.append(TableRow);
-          for (let k = 0; k < columns; k++) {
-            const Cell = document.createElement("td");
-            TableRow.append(Cell);
-            try {
-              if (data.table.rows[i].c[k].f === undefined) {
-                Cell.innerHTML = data.table.rows[i].c[k].v;
-              } else {
-                Cell.innerHTML = data.table.rows[i].c[k].f;
-              }
-            } catch (error) {
-              Cell.innerHTML = "";
+            if (data.table.rows[i].c[k].f === undefined) {
+              Cell.innerHTML = data.table.rows[i].c[k].v;
+            } else {
+              Cell.innerHTML = data.table.rows[i].c[k].f;
             }
+          } catch (error) {
+            Cell.innerHTML = "";
           }
         }
-      });
-  }
+      }
+    });
 
+  var input = document.getElementById("myInput");
+  input.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      Search();
+    }
+  });
   function Search() {
     //Search
-
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -96,17 +96,5 @@ import "../styles/Check.css";
         }
       }
     }
-  }
-
-  try {
-    Table();
-    var input = document.getElementById("myInput");
-    input.addEventListener("keypress", function (event) {
-      if (event.key === "Enter") {
-        Search();
-      }
-    });
-  } catch (error) {
-    console.log("Table Error");
   }
 </script>
