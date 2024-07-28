@@ -1,15 +1,15 @@
 ---
 import "../styles/Beta.css";
 import "../styles/Leadership.css";
-const {Name, Title, About, Image, Mail} = Astro.props
+const {Name, Title, About, Image,House, Mail} = Astro.props
 ---
 
 <div class="box">
     <img class="Face" src=`../Images/Leaders/${Image}` />
-    <p class="Name">
-      {Name}
-      <img class="Crest" src="../Images/Crests/Rachel crest.png" alt="" />
-    </p>
+    <div class="Name">
+      <div>{Name}</div>
+        <div class="House">{House}</div>
+    </div>
     <p class="Title">
       {Title}
       <a href=`mailto:${Mail}` class="Mail">
