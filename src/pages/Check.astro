@@ -15,18 +15,26 @@ import "../styles/Check.css";
     >
   </div>
   <table id="myTable"></table>
-    <div id="row1">
+  <div id="row1">
     <div class="hours">Minimum of 10 hours per Semester</div>
     <div class="meeting">Attend all meetings</div>
     <div class="vary">Have at least 3 different types of hours</div>
   </div>
 </MainLayout>
 <script>
-  let SheetId = [import.meta.env.PUBLIC_ID1, import.meta.env.PUBLIC_ID2,import.meta.env.PUBLIC_ID3];  
+  let SheetId = [
+    import.meta.env.PUBLIC_ID1,
+    import.meta.env.PUBLIC_ID2,
+    import.meta.env.PUBLIC_ID3,
+  ];
   const sheetTitle = import.meta.env.PUBLIC_CHECK;
-  let randInt = Math.floor(Math.random()*3);
-  
-  const FULL_URL = "https://docs.google.com/spreadsheets/d/" + SheetId[randInt] + "/gviz/tq?sheet=" + sheetTitle;
+  let randInt = Math.floor(Math.random() * 3);
+
+  const FULL_URL =
+    "https://docs.google.com/spreadsheets/d/" +
+    SheetId[randInt] +
+    "/gviz/tq?sheet=" +
+    sheetTitle;
   fetch(FULL_URL)
     .then((res) => res.text())
     .then((rep) => {

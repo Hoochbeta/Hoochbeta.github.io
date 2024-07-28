@@ -9,48 +9,56 @@ import "../styles/Rankings.css";
   <table id="myTable"></table>
 </MainLayout>
 <script>
-  let SheetId = [import.meta.env.PUBLIC_ID1, import.meta.env.PUBLIC_ID2,import.meta.env.PUBLIC_ID3];  
+  let SheetId = [
+    import.meta.env.PUBLIC_ID1,
+    import.meta.env.PUBLIC_ID2,
+    import.meta.env.PUBLIC_ID3,
+  ];
   const sheetTitle = import.meta.env.PUBLIC_RANK;
-  let randInt = Math.floor(Math.random()*3);
-  
-  const FULL_URL = "https://docs.google.com/spreadsheets/d/" + SheetId[randInt] + "/gviz/tq?sheet=" + sheetTitle;
-    fetch(FULL_URL)
-      .then((res) => res.text())
-      .then((rep) => {
-        let data = JSON.parse(rep.substring(47).slice(0, -2));
+  let randInt = Math.floor(Math.random() * 3);
 
-        const Table = document.getElementById("myTable");
-        const columns = data.table.cols.length;
-        const rows = data.table.rows.length;
+  const FULL_URL =
+    "https://docs.google.com/spreadsheets/d/" +
+    SheetId[randInt] +
+    "/gviz/tq?sheet=" +
+    sheetTitle;
+  fetch(FULL_URL)
+    .then((res) => res.text())
+    .then((rep) => {
+      let data = JSON.parse(rep.substring(47).slice(0, -2));
 
+      const Table = document.getElementById("myTable");
+      const columns = data.table.cols.length;
+      const rows = data.table.rows.length;
+
+      const TableRow = document.createElement("tr");
+      Table.append(TableRow);
+      for (let j = 0; j < columns; j++) {
+        const TableHeader = document.createElement("th");
+        TableRow.append(TableHeader);
+        try {
+          TableHeader.innerHTML = data.table.cols[j].label;
+        } catch (error) {
+          TableHeader.innerHTML = "";
+        }
+      }
+
+      for (let i = 0; i < rows; i++) {
         const TableRow = document.createElement("tr");
         Table.append(TableRow);
-        for (let j = 0; j < columns; j++) {
-          const TableHeader = document.createElement("th");
-          TableRow.append(TableHeader);
+        for (let k = 0; k < columns; k++) {
+          const Cell = document.createElement("td");
+          TableRow.append(Cell);
           try {
-            TableHeader.innerHTML = data.table.cols[j].label;
-          } catch (error) {
-            TableHeader.innerHTML = "";
-          }
-        }
-
-        for (let i = 0; i < rows; i++) {
-          const TableRow = document.createElement("tr");
-          Table.append(TableRow);
-          for (let k = 0; k < columns; k++) {
-            const Cell = document.createElement("td");
-            TableRow.append(Cell);
-            try {
-              if (data.table.rows[i].c[k].f === undefined) {
-                Cell.innerHTML = data.table.rows[i].c[k].v;
-              } else {
-                Cell.innerHTML = data.table.rows[i].c[k].f;
-              }
-            } catch (error) {
-              Cell.innerHTML = "";
+            if (data.table.rows[i].c[k].f === undefined) {
+              Cell.innerHTML = data.table.rows[i].c[k].v;
+            } else {
+              Cell.innerHTML = data.table.rows[i].c[k].f;
             }
+          } catch (error) {
+            Cell.innerHTML = "";
           }
         }
-      });
+      }
+    });
 </script>
