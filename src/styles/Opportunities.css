@@ -1,57 +1,59 @@
 .opportunity-card {
-    border: 1px solid #ccc;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: transform 0.2s;
-    max-width: 400px;
-    margin: 16px;
-    background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  max-width: 300px;
+  margin: 16px;
+  background-color: #fff;
 }
 
 .opportunity-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .OpportunityImage {
-    aspect-ratio: 1/2;
-    width: 400px;
+  aspect-ratio: 16/9;
+  width: 300px;
 }
 
 .OpportunityContent {
-    padding: 16px;
+  padding: 8px;
 }
 
 .OpportunityTitle {
-    font-size: 1.5rem;
-    margin: 8px 0;
+  font-size: 1.5rem;
 }
 
 .OpportunityDetails {
-    display: flex;
-    justify-content: space-between;
-    margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
 }
 
-.OpportunityType, .OpportunityHours {
-    background-color: #f0f0f0;
-    border-radius: 12px;
-    padding: 4px 8px;
+.OpportunityType,
+.OpportunityHours {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 4px 8px;
 }
 
 .OpportunityInfo {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
-.OpportunityLocation, .OpportunitySponsor, .OpportunityContact {
-    margin: 4px 0;
+.OpportunityLocation,
+.OpportunitySponsor,
+.OpportunityContact {
+  margin: 4px 0;
 }
 
 .OpportunityLink {
-    display: block;
-    padding: 8px 16px;
-    background-color: rgb(var(--primary));
-    color: rgb(var(--text-color));
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
+  display: block;
+  padding: 8px 16px;
+  background-color: rgb(var(--primary));
+  color: rgb(var(--text-color));
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
 }
