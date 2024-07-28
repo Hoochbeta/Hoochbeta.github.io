@@ -1,6 +1,6 @@
 :root{
     --bg: 248, 239, 228;/*Cream*/
-    --primary:230, 194, 191;/*Rosewater */
+    --primary:157, 217, 243;/*Rosewater */
     --accent: 207, 181, 59;/*Gold*/
     --text-color:40, 33, 32;/*Jet Black*/
     --Gradient:0, 70, 111;/*Green*/  
@@ -8,6 +8,7 @@
 }
 
 /*Rosewater - #E6C2BF
+Columbia Blue - #9dd9f3
 Cream - #F8EFE4
 Old Gold - #CFB53B
 Jet Black - #282120
