@@ -1,0 +1,20 @@
+---
+import "../styles/Opportunities.css";
+const { Title, Hours, Location, SponsorName, SponsorContact, Link, Image } = Astro.props;
+---
+
+<div class="opportunity-card">
+    <img class="OpportunityImage" src={`../Images/Opportunities/${Image}`} alt={Title} />
+    <div class="OpportunityContent">
+        <h3 class="OpportunityTitle">{Title}</h3>
+        <div class="OpportunityDetails">
+            <span class="OpportunityHours">{Hours}</span>
+        </div>
+        <div class="OpportunityInfo">
+            <p class="OpportunityLocation"><strong>Location:</strong> {Location}</p>
+            <p class="OpportunitySponsor"><strong>Sponsor:</strong> {SponsorName}</p>
+            <p class="OpportunityContact"><strong>Contact:</strong> {SponsorContact}</p>
+        </div>
+        <a href={Link} class="OpportunityLink">Sign Up</a>
+    </div>
+</div>

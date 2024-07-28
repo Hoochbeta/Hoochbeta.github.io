@@ -2,8 +2,19 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import OpportunityCard from "../components/OpportunityCard.astro";
 ---
 
 <MainLayout title="Opportunities">
   <Navbar />
+  <OpportunityCard
+    Title="Help Your Teachers"
+    Hours="2.5"
+    Location="CHS"
+    SponsorName="Ms. Lee"
+    SponsorContact="leelc@fultoncountyschools.org"
+    Link="https://www.signupgenius.com/go/5080D44A5AA2EA7F58-50393997-teacher"
+    Image="../Images/Logo.png"
+  />
+  
 </MainLayout>
