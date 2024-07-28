@@ -5,7 +5,7 @@ const { Name, Title, About, Image, House, Mail } = Astro.props;
 ---
 
 <div class="box">
-  <img class="Face" src=`../Images/Leaders/${Image}` alt={Name}/>
+  <img class="Face" src=`../Images/Leaders/${Image}` alt=`${Name}'s Picture`/>
   <div class="Name">
     <div>{Name}</div>
     <div class="House">{House}</div>
