@@ -9,8 +9,8 @@ import "../styles/Rankings.css";
   <table id="myTable"></table>
 </MainLayout>
 <script>
-  let SheetId = ["1EoDXEyLlFEsM4zm0R-SbDQBtrkESwlBMIjY3nK09Jfs", "11b-s64xFqXlY35cEo9u_Hxbp05iNPRfYYmQByYKmXck","1nROfONPcJ-J27Doj8Y2ByKt7dZEIO3TNQCfAqKb_6KI"];  
-  const sheetTitle = "Rankings";
+  let SheetId = [import.meta.env.PUBLIC_ID1, import.meta.env.PUBLIC_ID2,import.meta.env.PUBLIC_ID3];  
+  const sheetTitle = import.meta.env.PUBLIC_RANK;
   let randInt = Math.floor(Math.random()*3);
   
   const FULL_URL = "https://docs.google.com/spreadsheets/d/" + SheetId[randInt] + "/gviz/tq?sheet=" + sheetTitle;
