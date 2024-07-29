@@ -61,7 +61,7 @@ a{
   border: none;
   cursor: pointer;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .subnav {
@@ -86,6 +86,7 @@ a{
   text-decoration: none;
   display: block;
   color: rgb(var(--text-color));
+  font-weight: 300;
 }
 
 .subnav-content a:hover {
