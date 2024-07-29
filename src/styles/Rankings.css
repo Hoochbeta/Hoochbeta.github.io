@@ -9,7 +9,7 @@
       font-size: 18px;
       font-weight: 500;
       width: 12.5%;
-      background-color: rgb(var(--primary));
+      background-color: rgb(var(--Gradient));
       color: white;
     }
     td,th{
