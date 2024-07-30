@@ -64,7 +64,7 @@ h1{
 }
 @media(max-width:740px) {
   #table{
-    font-size: 1rem;
+    font-size: .75rem;
   }
   .row{
     width: 100vw;
