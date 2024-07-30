@@ -3,7 +3,9 @@
     --primary:157, 217, 243;/*Columbia Blue */
     --accent: 207, 181, 59;/*Gold*/
     --text-color:40, 33, 32;/*Jet Black*/
-    --Gradient:0, 70, 111;/*Green*/  
+    --white-text:255,255,255;/*White*/
+    --Secondary:0, 70, 111;/*Regal Blue*/
+    --Secondary-Dark: 199, 205, 205; /*Ghost */
     --pic-width:350px;
 }
 
@@ -12,4 +14,6 @@ Columbia Blue - #9dd9f3
 Cream - #F8EFE4
 Old Gold - #CFB53B
 Jet Black - #282120
+Regal Blue - #00466f;
+Ghost: #c7cdcd;
 */

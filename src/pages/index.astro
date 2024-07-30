@@ -12,120 +12,153 @@ import Footer from "../components/Footer.astro";
   <Navbar />
   <h1 class="header">Chattahoochee High School Beta Club</h1>
   <main>
-    <div class="Events">
-      <p style="font-size: 18px;">Upcoming Events</p>
-    </div>
-    <div class="Hooch">
-      <p class="Hooch_Title">What is BETA at Hooch?</p>
-      <p>
-        Beta at Chattahoochee High School is more than a mere club of volunteers
-        - it's a community; a family of individuals dedicated to consistently
-        provide their community in unique ways. From helping at veterans'
-        associations to making chew toys for pet adoption centers, members of
-        Hooch Beta have always found ways to give back to their community.
-        Members are held to a high standard and are expected to maintain a
-        culture of academic excellence as well as exemplifying the four pillars
-        of Beta: achievement, character, leadership, and service.
-      </p>
-    </div>
-    <div class="Motto">Let Us Lead By Serving Others</div>
-    <div class="Pictures">
-      <!--Image slider start-->
-      <div class="slider">
-        <div class="slides">
-          <!--Radio Buttons start-->
-          <input type="radio" name="radio-btn" id="radio0" />
-          <input type="radio" name="radio-btn" id="radio1" />
-          <input type="radio" name="radio-btn" id="radio2" />
-          <input type="radio" name="radio-btn" id="radio3" />
-          <input type="radio" name="radio-btn" id="radio4" />
-          <input type="radio" name="radio-btn" id="radio5" />
-          <input type="radio" name="radio-btn" id="radio6" />
-          <!--Radio Buttons end-->
-          <!-- Slide Images start -->
-          <div class="slide first">
-            <img src="Images/Index/Beta1.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta2.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta3.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta4.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta5.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta6.png" alt="" />
-          </div>
-          <div class="slide">
-            <img src="Images/Index/Beta7.png" alt="" />
-          </div>
-          <!-- SLide Images end -->
-          <!-- Automatic navigation start -->
-          <div class="navigation-auto">
-            <div class="auto-btn0"></div>
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-            <div class="auto-btn6"></div>
-          </div>
-          <!-- Automatic navigation end -->
+    <div class="top">
+      <div class="title">
+        <div class="titlecard">
+          <p onmouseover="TextChange()" onmouseout="TextRevert()" id="Header">
+            HOOCH BETA
+          </p>
         </div>
-        <!-- Manual Navigation start -->
-        <div class="navigation-manual">
-          <label for="radio0" class="manual-btn"></label>
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-          <label for="radio6" class="manual-btn"></label>
-        </div>
-        <!-- Manual Navigation end -->
+        <p class="Motto">Let Us Lead By Serving Others</p>
       </div>
-      <!--Image slider end-->
+      <div class="calendar">
+        <input type="radio" name="radio-Cal" id="Fall-radio" />
+        <input type="radio" name="radio-Cal" id="Spring-radio" />
+        <input type="radio" name="radio-Cal" id="Opportunity-radio" />
+        <div class="options">
+          <div class="radio-wrapper">
+            <label for="Fall-radio" class="radio" id="Fall-label"></label>
+          </div>
+          <div class="radio-wrapper">
+            <label for="Spring-radio" class="radio" id="Spring-label"></label>
+          </div>
+          <div class="radio-wrapper">
+            <label for="Opportunity-radio" class="radio" id="Opportunity-label"
+            ></label>
+          </div>
+        </div>
+        <div class="slider">
+          <div id="Fall" class="card">
+            <h4>Meeting Dates</h4>
+            <p class="months">August</p>
+            <p class="months">September</p>
+            <p class="months">October</p>
+            <p class="months">November</p>
+            <p class="months">December</p>
+          </div>
+          <div id="Spring" class="card">
+            <h4>Meeting Dates</h4>
+            <p class="months">January</p>
+            <p class="months">February</p>
+            <p class="months">March</p>
+            <p class="months">April</p>
+            <p class="months">May</p>
+          </div>
+          <div id="Opportunity" class="card">
+            <h4>Opportunity</h4>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="Meeting">
-      <p style="font-size: 18px; margin-bottom: 10px;">Meeting Dates</p>
-      <div class="Meeting-Grid">
-        <p class="Header">Fall Dates</p>
-        <p class="Header">Spring Dates</p>
-        <p class="dates">Thursday August 31st</p>
-        <p class="dates">Thursday January 18th</p>
-        <p class="dates">Thursday September 21st-New Members ONLY</p>
-        <p class="dates">Thursday February 29th-Induction Ceremony</p>
-        <p class="dates">Thursday October 26th</p>
-        <p class="dates">Thursday March 28th</p>
-        <p class="dates">Thursday November 16th</p>
-        <p class="dates">Thursday April 11th</p>
-        <p class="dates">Thursday December 7th</p>
-        <p class="dates">Thursday May 13th</p>
+    <div class="bottom">
+      <div class="pics">
+        <input type="radio" name="radio-Pic" id="rad0" />
+        <input type="radio" name="radio-Pic" id="rad1" />
+        <input type="radio" name="radio-Pic" id="rad2" />
+        <input type="radio" name="radio-Pic" id="rad3" />
+        <input type="radio" name="radio-Pic" id="rad4" />
+        <input type="radio" name="radio-Pic" id="rad5" />
+        <input type="radio" name="radio-Pic" id="rad6" />
+        <input type="radio" name="radio-Pic" id="rad7" />
+        <input type="radio" name="radio-Pic" id="rad8" />
+
+        <div class="img-slider">
+          <div class="slide-wrapper">
+            <img src="Images/Beta1.png" alt="" class="img-slide first" />
+            <img src="Images/Beta2.png" alt="" class="img-slide" />
+            <img src="Images/Beta3.png" alt="" class="img-slide" />
+            <img src="Images/Beta4.png" alt="" class="img-slide" />
+            <img src="Images/Beta5.png" alt="" class="img-slide" />
+            <img src="Images/Beta6.png" alt="" class="img-slide" />
+            <img src="Images/Beta7.png" alt="" class="img-slide" />
+            <img src="Images/Beta8.png" alt="" class="img-slide" />
+            <img src="Images/Beta9.png" alt="" class="img-slide" />
+          </div>
+        </div>
+
+        <div class="radiowrapper-pic">
+          <label for="rad0" id="radio1" class="radiopic"></label>
+          <label for="rad1" id="radio2" class="radiopic"></label>
+          <label for="rad2" id="radio3" class="radiopic"></label>
+          <label for="rad3" id="radio4" class="radiopic"></label>
+          <label for="rad4" id="radio5" class="radiopic"></label>
+          <label for="rad5" id="radio6" class="radiopic"></label>
+          <label for="rad6" id="radio7" class="radiopic"></label>
+          <label for="rad7" id="radio8" class="radiopic"></label>
+          <label for="rad8" id="radio9" class="radiopic"></label>
+        </div>
+      </div>
+      <div class="whatis">
+        <h3>What is Beta at Hooch?</h3>
+        <p>
+          Beta at Chattahoochee High School is more than a mere club of
+          volunteers - it's a community; a family of individuals dedicated to
+          consistently provide their community in unique ways. From helping at
+          veterans' associations to making chew toys for pet adoption centers,
+          members of Hooch Beta have always found ways to give back to their
+          community. Members are held to a high standard and are expected to
+          maintain a culture of academic excellence as well as exemplifying the
+          four pillars of Beta: achievement, character, leadership, and service.
+        </p>
       </div>
     </div>
   </main>
 </MainLayout>
+
 <script>
-  const radio0 = document.getElementById("radio0") as HTMLInputElement;
-  radio0.checked = true;
-  setInterval(function () {
-    for (let i = 0; i < 7; i++) {
-      let radio = document.getElementById(
-        "radio" + String(i)
+  const CalArray = [
+    document.getElementById("Fall-radio") as HTMLInputElement,
+    document.getElementById("Spring-radio") as HTMLInputElement,
+    document.getElementById("Opportunity-radio") as HTMLInputElement,
+  ];
+  let RandNum = Math.floor(Math.random() * 2);
+  let RandPic = Math.floor(Math.random() * 9);
+  let RandRadPic = document.getElementById(`rad${RandPic}`) as HTMLInputElement;
+  RandRadPic.checked = true;
+  if (RandNum == 0) {
+    CalArray[0].checked = true;
+  } else {
+    CalArray[2].checked = true;
+  }
+
+  setInterval(() => {
+    for (let i = 0; i < 3; i++) {
+      if (CalArray[i].checked == true) {
+        CalArray[i].checked = false;
+        CalArray[(i + 1) % 3].checked = true;
+        break;
+      }
+    }
+    for (let j = 0; j < 9; j++) {
+      let radioCurrent = document.getElementById(`rad${j}`) as HTMLInputElement;
+      let radioNext = document.getElementById(
+        `rad${(j + 1) % 9}`
       ) as HTMLInputElement;
-      let radio_next = document.getElementById(
-        "radio" + String((i + 1) % 7)
-      ) as HTMLInputElement;
-      if (radio.checked == true) {
-        radio.checked = false;
-        radio_next.checked = true;
+      if (radioCurrent.checked == true) {
+        radioCurrent.checked = false;
+        radioNext.checked = true;
         break;
       }
     }
   }, 10000);
+  function TextChange() {
+    const Header = document.getElementById("Header");
+    const WordArr = ["Achievement", "Character", "Leadership", "Service"];
+    let RandWord = Math.floor(Math.random() * 4);
+    Header.innerHTML = WordArr[RandWord];
+  }
+  function TextRevert() {
+    const Header = document.getElementById("Header");
+    Header.innerHTML = "HOOCH BETA";
+  }
 </script>
