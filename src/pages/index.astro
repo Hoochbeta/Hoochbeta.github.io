@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/Index.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import "@fontsource/cinzel-decorative/400.css";
 ---
 
 <MainLayout title="Home">
@@ -13,10 +14,8 @@ import Footer from "../components/Footer.astro";
   <main>
     <div class="top">
       <div class="title">
-        <div class="titlecard">
-          <p onmouseover="TextChange()" onmouseout="TextRevert()" id="Header">
-            HOOCH BETA
-          </p>
+        <div class="titlecard" id="TitleCard">
+          <p id="Header">HOOCH BETA</p>
         </div>
         <p class="Motto">Let Us Lead By Serving Others</p>
       </div>
@@ -73,7 +72,11 @@ import Footer from "../components/Footer.astro";
 
         <div class="img-slider">
           <div class="slide-wrapper">
-            <img src="../Images/Index/Beta1.png" alt="" class="img-slide first" />
+            <img
+              src="../Images/Index/Beta1.png"
+              alt=""
+              class="img-slide first"
+            />
             <img src="../Images/Index/Beta2.png" alt="" class="img-slide" />
             <img src="../Images/Index/Beta3.png" alt="" class="img-slide" />
             <img src="../Images/Index/Beta4.png" alt="" class="img-slide" />
@@ -150,14 +153,17 @@ import Footer from "../components/Footer.astro";
       }
     }
   }, 10000);
-  function TextChange() {
-    const Header = document.getElementById("Header");
+
+  const TitleCard = document.getElementById("TitleCard");
+  const Header = document.getElementById("Header");
+
+  TitleCard.addEventListener("mouseenter", (event) => {
     const WordArr = ["Achievement", "Character", "Leadership", "Service"];
     let RandWord = Math.floor(Math.random() * 4);
     Header.innerHTML = WordArr[RandWord];
-  }
-  function TextRevert() {
-    const Header = document.getElementById("Header");
+  });
+
+  TitleCard.addEventListener("mouseleave", (event) => {
     Header.innerHTML = "HOOCH BETA";
-  }
+  });
 </script>
