@@ -12,6 +12,7 @@ Body{
   font-family: 'Rubik', sans-serif;
   color: rgb(var(--text-color));
   max-width: 100vw;
+  transition: 1s;
 }
 .navbar {
   width: 100vw;
