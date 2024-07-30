@@ -35,19 +35,19 @@ main {
   border-radius: 10rem;
   letter-spacing: -4px;
   width: 75vw;
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
   transition: linear 0.1s;
   font-family: "Cinzel Decorative", serif;
   font-size: 80px;
-  color: var(rgb(--white-text));
+  color: rgb(var(--white-text));
 }
 .titlecard:hover {
   border: 3px solid #0000;
   background: linear-gradient(
       var(--angle),
-      var(rgb(--accent)),
-      var(rgb(--secondary-Dark)) 50%,
-      var(rgb(--primary))
+      rgb(var(--accent)),
+      rgb(var(--secondary-Dark)) 50%,
+      rgb(var(--primary))
     )
     border-box;
   animation: 8s rotate linear infinite;
@@ -63,7 +63,7 @@ main {
   flex-direction: column-reverse;
   width: 15vw;
   height: 15vw;
-  background-color: var(rgb(--secondary));
+  background-color: rgb(var(--secondary));
   border-radius: 2rem;
   text-align: center;
   overflow: hidden;
@@ -74,8 +74,8 @@ main {
   width: 500%;
 }
 .card {
-  color: var(rgb(--white-text));
-  background-color: var(rgb(--secondary));
+  color: rgb(var(--white-text));
+  background-color: rgb(var(--secondary));
   border-radius: 2.5rem;
   padding: 0.5rem;
   transition: ease-in 0.5s;
@@ -120,20 +120,20 @@ input[name="radio-Pic"] {
   bottom: 0;
   height: 0.75rem;
   width: 0.75rem;
-  background-color: var(rgb(--secondary-Dark));
+  background-color: rgb(var(--secondary-Dark));
   border-radius: 50%;
 }
 .radio-wrapper:hover .radio {
-  background-color: var(rgb(--white-text));
+  background-color: rgb(var(--white-text));
 }
 #Fall-radio:checked ~ .options .radio-wrapper #Fall-label {
-  background-color: var(rgb(--white-text));
+  background-color: rgb(var(--white-text));
 }
 #Spring-radio:checked ~ .options .radio-wrapper #Spring-label {
-  background-color: var(rgb(--white-text));
+  background-color: rgb(var(--white-text));
 }
 #Opportunity-radio:checked ~ .options .radio-wrapper #Opportunity-label {
-  background-color: var(rgb(--white-text));
+  background-color: rgb(var(--white-text));
 }
 
 #Fall-radio:checked ~ .slider #Fall {
@@ -156,10 +156,10 @@ input[name="radio-Pic"] {
   border-radius: 2rem;
   background-image: radial-gradient(
     ellipse at top,
-    var(rgb(--primary)),
-    var(rgb(--bg))
+    rgb(var(--primary)),
+    rgb(var(--bg))
   );
-  border: 1px solid var(rgb(--secondary-Dark));
+  border: 1px solid rgb(var(--secondary-Dark));
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,7 @@ h3 {
   display: block;
   width: 40vw;
   aspect-ratio: 16/9;
-  border: 2px solid var(rgb(--secondary-Dark));
+  border: 2px solid rgb(var(--secondary-Dark));
   border-radius: 5rem;
   overflow: hidden;
 }
@@ -207,40 +207,40 @@ h3 {
 .radiopic {
   height: 0.75rem;
   width: 0.75rem;
-  background-color: var(rgb(--secondary-Dark));
+  background-color: rgb(var(--secondary-Dark));
   border-radius: 50%;
   transition: 0.25s;
 }
 
 .radiopic:hover {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad0:checked ~ .radiowrapper-pic #radio1 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad1:checked ~ .radiowrapper-pic #radio2 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad2:checked ~ .radiowrapper-pic #radio3 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad3:checked ~ .radiowrapper-pic #radio4 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad4:checked ~ .radiowrapper-pic #radio5 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad5:checked ~ .radiowrapper-pic #radio6 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad6:checked ~ .radiowrapper-pic #radio7 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad7:checked ~ .radiowrapper-pic #radio8 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 #rad8:checked ~ .radiowrapper-pic #radio9 {
-  background-color: var(rgb(--accent));
+  background-color: rgb(var(--accent));
 }
 
 #rad0:checked ~ .img-slider .first {
