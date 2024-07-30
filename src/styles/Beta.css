@@ -191,9 +191,11 @@ iframe{
     font-size: 12px;
   }
   .Logo{
-    position: absolute;
-    right: 10.7em;
     margin-left: 10px;
+    margin-right: 10rem;
+  }
+  ul>li>a>.Logo{
+    display: none;
   }
   .navbar{
    backdrop-filter: blur(15px); /* DO NOT TOUCH THIS, ITS WEIRDLY IMPORTANT*/
@@ -252,7 +254,9 @@ iframe{
    margin: 20px;
   }
   .close-btn{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   }
   .menu-btn{
     display: flex;
