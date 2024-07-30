@@ -1,36 +1,65 @@
 @import url("Root.css");
-    table{
-      text-align: center;
-      padding: 10px;
-      width: 100vw;
-      margin-top: 10px;
-    }
-    th{
-      font-size: 18px;
-      font-weight: 500;
-      width: 12.5%;
-      background-color: rgb(var(--Secondary));
-      color: white;
-    }
-    td,th{
-      padding: 10px;
-    }
-    table, tr, td,th {
-      border: 2px solid white;
-      border-collapse: collapse;
-    }
-    ::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-    }
-    
-    ::-webkit-scrollbar-track {
-    background: rgb(var(--bg));
-    }
-    ::-webkit-scrollbar-thumb {
-    background: rgb(var(--primary));
-    border-radius: 5px;
-    }
-    ::-webkit-scrollbar-corner{
-      background-color: rgb(var(--bg));
-    }
+h1{
+  text-align: center;
+  margin-top:.5rem ;
+}
+#table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:  .5rem 2rem 1rem 2rem;
+
+  font-size: 1.25rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 3.5rem;
+  width: 70vw;
+  gap: 4rem;
+  margin: 0.25rem 0;
+}
+.row > :nth-child(3) {
+  display: flex;
+  margin-left: auto;
+  gap: 6px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.row:nth-child(even) {
+  background-color: rgb(var(--secondary-Dark));
+}
+.row:nth-child(odd) {
+  background-color: rgb(var(--primary));
+}
+#row0 div .fa-trophy {
+  color: rgb(var(--accent));
+}
+#row1 div .fa-trophy {
+  color: rgb(var(--white-text));
+}
+#row2 div .fa-trophy {
+  color: var(--bronze);
+}
+.fa-user{
+  color: rgb(var(--text-color));
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--primary));
+  border-radius: 5px;
+}
+::-webkit-scrollbar-corner {
+  background-color: rgb(var(--bg));
+}

@@ -6,6 +6,7 @@
     --white-text:255,255,255;/*White*/
     --secondary:0, 70, 111;/*Regal Blue*/
     --secondary-Dark: 199, 205, 205; /*Ghost */
+    --bronze:rgb(205, 127, 50);
     --pic-width:350px;
 }
 

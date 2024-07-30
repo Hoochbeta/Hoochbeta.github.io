@@ -6,7 +6,8 @@ import "../styles/Rankings.css";
 
 <MainLayout title="Rankings">
   <Navbar />
-  <table id="myTable"></table>
+  <h1>Rankings</h1>
+  <div id="table"></div>
 </MainLayout>
 <script>
   let SheetId = [
@@ -15,50 +16,82 @@ import "../styles/Rankings.css";
     import.meta.env.PUBLIC_ID3,
   ];
   const sheetTitle = import.meta.env.PUBLIC_RANK;
-  let randInt = Math.floor(Math.random() * 3);
+  let randInt = Math.floor(Math.random() * SheetId.length);
 
   const FULL_URL =
     "https://docs.google.com/spreadsheets/d/" +
     SheetId[randInt] +
     "/gviz/tq?sheet=" +
     sheetTitle;
-  fetch(FULL_URL)
-    .then((res) => res.text())
-    .then((rep) => {
-      let data = JSON.parse(rep.substring(47).slice(0, -2));
-
-      const Table = document.getElementById("myTable");
-      const columns = data.table.cols.length;
-      const rows = data.table.rows.length;
-
-      const TableRow = document.createElement("tr");
-      Table.append(TableRow);
-      for (let j = 0; j < columns; j++) {
-        const TableHeader = document.createElement("th");
-        TableRow.append(TableHeader);
-        try {
-          TableHeader.innerHTML = data.table.cols[j].label;
-        } catch (error) {
-          TableHeader.innerHTML = "";
-        }
-      }
-
-      for (let i = 0; i < rows; i++) {
-        const TableRow = document.createElement("tr");
-        Table.append(TableRow);
-        for (let k = 0; k < columns; k++) {
-          const Cell = document.createElement("td");
-          TableRow.append(Cell);
-          try {
-            if (data.table.rows[i].c[k].f === undefined) {
-              Cell.innerHTML = data.table.rows[i].c[k].v;
-            } else {
-              Cell.innerHTML = data.table.rows[i].c[k].f;
+    const Table = document.getElementById("table");
+      fetch(FULL_URL)
+        .then((res) => res.text())
+        .then((rep) => {
+          let data = JSON.parse(rep.substring(47).slice(0, -2));
+          console.log(data);
+          const rows = data.table.rows.length;
+          for (let i = 0; i < rows; i++) {
+            let Row = document.createElement("div");
+            Table.append(Row);
+            Row.classList.add("row");
+            Row.setAttribute("id", `row${i}`);
+            for (let k = 0; k < 3; k++) {
+              let Col = document.createElement("div");
+              Row.append(Col);
+              try {
+                if (data.table.rows[i].c[k].f === undefined) {
+                  if (k == 2) {
+                    Col.innerHTML =
+                      "<p>" +
+                      data.table.rows[i].c[k].v +
+                      "</p>" +
+                      "<i class='fa-solid fa-clock'></i>";
+                  } else {
+                    Col.innerHTML = data.table.rows[i].c[k].v;
+                  }
+                } else {
+                  if (k == 2) {
+                    Col.innerHTML =
+                      "<p>" +
+                      data.table.rows[i].c[k].f +
+                      "</p>" +
+                      "<i class='fa-solid fa-clock'></i>";
+                  } else {
+                    Col.innerHTML = data.table.rows[i].c[k].f;
+                  }
+                }
+              } catch (error) {
+                break;
+              }
             }
-          } catch (error) {
-            Cell.innerHTML = "";
           }
-        }
-      }
-    });
+
+          for (let i = 0; i < 3; i++) {
+            let Rank = document.getElementById(`row${i}`).firstChild as HTMLInputElement
+            Rank.innerHTML  =
+              "<i class='fa-solid fa-trophy'></i>";
+          }
+          for (let i = 0; i < rows; i++) {
+            let Hour = document.getElementById(`row${i}`).lastChild as HTMLInputElement;
+            Hour.addEventListener("mouseenter", (event) => {
+              Hour.innerHTML =
+                "<p>" +
+                data.table.rows[i].c[3].f +
+                "</p>" +
+                "<i class='fa-solid fa-clock'></i>" +
+                "<p class='slash'>/</p>" +
+                "<p>" +
+                data.table.rows[i].c[4].f +
+                "</p>" +
+                "<i class='fa-regular fa-user'></i>";
+            });
+            Hour.addEventListener("mouseleave", (event) => {
+              Hour.innerHTML =
+                "<p>" +
+                data.table.rows[i].c[2].f +
+                "</p>" +
+                "<i class='fa-solid fa-clock'></i>";
+            });
+          }
+        });
 </script>
