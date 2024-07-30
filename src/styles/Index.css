@@ -273,7 +273,33 @@ h3 {
   margin-left: -160%;
 }
 
-@media(max-width:740px){
+@media(max-width:1080px){
+  #Header{
+    font-size: 64px;
+  }
+  .calendar{
+    width: 40vw;
+  }
+  .top{
+    gap: 2rem;
+  }
+  h3{
+    text-align: center;
+    font-size: 2rem;
+  }
+  h4{
+    margin-bottom: 1rem;
+    font-size: 24px;
+  }
+  .whatis p{
+    font-size: 1rem;
+  }
+  .titlecard{
+    width: 60vw;
+  }
+
+}
+@media(max-width:850px){
   main{
     padding: 1rem 0;
   }
@@ -288,22 +314,13 @@ h3 {
   #Header{
     font-size: 48px;
   }
-  h3{
-    text-align: center;
-    font-size: 2rem;
-  }
+
   .top{
     gap: 1rem;
     margin-bottom: 2rem;
   }
-  h4{
-    margin-bottom: 1rem;
-    font-size: 24px;
-  }
   .Motto{
     font-size: 2rem;
   }
-  .whatis p{
-    font-size: 1rem;
-  }
+
 }

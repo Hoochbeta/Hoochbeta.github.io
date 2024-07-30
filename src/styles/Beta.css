@@ -104,7 +104,7 @@ a{
   color: rgb(var(--accent));
   font-size: 20px;
   right: 0;
-  margin: 25px;
+  padding: 1rem;
   cursor: pointer;
   display: none;
 }
@@ -258,15 +258,31 @@ iframe{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 2.5rem;
   }
   .menu-btn{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;background-color: rgb(var(--primary));
+    font-size: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-btn .Logo{
+    margin-left: 1rem;
+    margin-right: auto;
   }
   .brands{
     gap: 1rem;
   }
   li>img{
     display: none;
+  }
+  .School p{
+    display: none;
+  }
+  .School::after{
+    content: 'HOOCH BETA';
+    font-size: 2rem;
+    font-family: "Cinzel Decorative", serif;
   }
 }

@@ -5,6 +5,7 @@ import "../styles/Beta.css";
 <div id="page-container">
   <div class="menu-btn">
     <i class="fa fa-bars"></i>
+    <a href="../"> <img src="/Images/Logo.png" alt="Logo" class="Logo" /> </a>
   </div>
   <nav class="navbar">
     <div class="close-btn">
@@ -12,13 +13,15 @@ import "../styles/Beta.css";
       <i class="fa fa-times"></i>
     </div>
     <ul class="nav-links">
-      <li><a href="../"><img src="/Images/Logo.png" alt="Logo" class="Logo" /></a></li>
-      <li class="School">Chattahoochee HS Beta</li>
+      <li>
+        <a href="../"><img src="/Images/Logo.png" alt="Logo" class="Logo" /></a>
+      </li>
+      <li class="School"><p>Chattahoochee HS Beta</p></li>
       <li class="nav-item"><a href="../">Home</a></li>
       <div class="subnav">
-        <a class="subnavbtn"
-          >About<i class="fa fa fa-angle-down dropdown"></i></a
-        >
+        <a class="subnavbtn">
+          About <i class="fa fa fa-angle-down dropdown"></i>
+        </a>
         <div class="subnav-content">
           <li><a href="../Leadership" class="sub-item">Leadership</a></li>
           <li><a href="../FAQ" class="sub-item">FAQ</a></li>
@@ -76,10 +79,13 @@ import "../styles/Beta.css";
   document.querySelectorAll(".subnavbtn").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var subnavContent = this.nextElementSibling;
+      var menu = this.querySelector('.dropdown');
       if (subnavContent.style.display === "block") {
         subnavContent.style.display = "none";
+        menu.style.transform = "rotate(0deg)"
       } else {
         subnavContent.style.display = "block";
+        menu.style.transform = "rotate(90deg)"
       }
     });
   });
