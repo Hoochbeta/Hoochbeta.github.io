@@ -9,7 +9,6 @@ h1{
   justify-content: space-between;
   align-items: center;
   padding:  .5rem 2rem 1rem 2rem;
-
   font-size: 1.25rem;
 }
 
@@ -62,4 +61,15 @@ h1{
 }
 ::-webkit-scrollbar-corner {
   background-color: rgb(var(--bg));
+}
+@media(max-width:740px) {
+  #table{
+    font-size: 1rem;
+  }
+  .row{
+    width: 100vw;
+  }
+  .row div{
+    flex-shrink: 0;
+  }
 }

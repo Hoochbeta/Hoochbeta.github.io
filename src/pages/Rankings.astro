@@ -28,7 +28,6 @@ import "../styles/Rankings.css";
         .then((res) => res.text())
         .then((rep) => {
           let data = JSON.parse(rep.substring(47).slice(0, -2));
-          console.log(data);
           const rows = data.table.rows.length;
           for (let i = 0; i < rows; i++) {
             let Row = document.createElement("div");
