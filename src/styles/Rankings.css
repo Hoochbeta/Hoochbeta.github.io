@@ -37,13 +37,17 @@ h1{
 }
 #row0 div .fa-trophy {
   color: rgb(var(--accent));
+  margin: 0;
 }
 #row1 div .fa-trophy {
   color: rgb(var(--white-text));
+  margin: 0;
 }
 #row2 div .fa-trophy {
   color: var(--bronze);
+  margin: 0;
 }
+
 .fa-user{
   color: rgb(var(--text-color));
 }
