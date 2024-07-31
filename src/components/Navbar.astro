@@ -1,5 +1,6 @@
 ---
 import "../styles/Beta.css";
+import "@fontsource/cinzel-decorative/400.css";
 ---
 
 <div id="page-container">
@@ -45,9 +46,9 @@ import "../styles/Beta.css";
         >
         <div class="subnav-content">
           <li>
-            <a href="https://forms.gle/hME1PGa3JxmJF4RP6" class="sub-item"
-              >Form</a
-            >
+            <a href="https://forms.gle/hME1PGa3JxmJF4RP6" class="sub-item">
+              Form
+            </a>
           </li>
           <li><a href="../Check" class="sub-item">Hour Count</a></li>
           <li><a href="../Status" class="sub-item">Denied Hours</a></li>
@@ -79,13 +80,13 @@ import "../styles/Beta.css";
   document.querySelectorAll(".subnavbtn").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var subnavContent = this.nextElementSibling;
-      var menu = this.querySelector('.dropdown');
+      var menu = this.querySelector(".dropdown");
       if (subnavContent.style.display === "block") {
         subnavContent.style.display = "none";
-        menu.style.transform = "rotate(0deg)"
+        menu.style.transform = "rotate(0deg)";
       } else {
         subnavContent.style.display = "block";
-        menu.style.transform = "rotate(90deg)"
+        menu.style.transform = "rotate(90deg)";
       }
     });
   });
