@@ -47,7 +47,9 @@ h1{
   color: var(--bronze);
   margin: 0;
 }
-
+.fa-clock{
+  margin: 0;
+}
 .fa-user{
   color: rgb(var(--text-color));
 }
