@@ -9,9 +9,7 @@ import "../styles/Index.css";
   <Navbar />
   <div class="search-container">
     <input type="text" id="myInput" placeholder="Search for your name" />
-    <button type="submit" onclick="Search()"
-      ><i class="fa-solid fa-magnifying-glass"></i></button
-    >
+    <button type="submit" id="Search"> Search </button>
   </div>
   <table id="myTable"></table>
 </MainLayout>
@@ -22,8 +20,8 @@ import "../styles/Index.css";
     import.meta.env.PUBLIC_ID2,
     import.meta.env.PUBLIC_ID3,
   ];
-  const sheetTitle = import.meta.env.PUBLIC_STATUS;
-  let randInt = Math.floor(Math.random() * 3);
+  const sheetTitle = import.meta.env.PUBLIC_STATUS
+  let randInt = Math.floor(Math.random() * 3)
 
   const FULL_URL =
     "https://docs.google.com/spreadsheets/d/" +
@@ -31,70 +29,73 @@ import "../styles/Index.css";
     "/gviz/tq?sheet=" +
     sheetTitle;
   fetch(FULL_URL)
-    .then((res) => res.text())
+  .then((res) => res.text())
     .then((rep) => {
-      let data = JSON.parse(rep.substring(47).slice(0, -2));
+      let data = JSON.parse(rep.substring(47).slice(0, -2))
 
-      const Table = document.getElementById("myTable");
-      const columns = data.table.cols.length;
-      const rows = data.table.rows.length;
+      const Table = document.getElementById("myTable")
+      const columns = data.table.cols.length
+      const rows = data.table.rows.length
 
-      const TableRow = document.createElement("tr");
-      Table.append(TableRow);
+      const TableRow = document.createElement("tr")
+      Table.append(TableRow)
       for (let j = 0; j < columns; j++) {
-        const TableHeader = document.createElement("th");
-        TableRow.append(TableHeader);
+        const TableHeader = document.createElement("th")
+        TableRow.append(TableHeader)
         try {
-          TableHeader.innerHTML = data.table.cols[j].label;
+          TableHeader.innerHTML = data.table.cols[j].label
         } catch (error) {
-          TableHeader.innerHTML = "";
+          TableHeader.innerHTML = ""
         }
       }
 
       for (let i = 0; i < rows; i++) {
-        const TableRow = document.createElement("tr");
-        Table.append(TableRow);
+        const TableRow = document.createElement("tr")
+        Table.append(TableRow)
         for (let k = 0; k < columns; k++) {
-          const Cell = document.createElement("td");
-          TableRow.append(Cell);
+          const Cell = document.createElement("td")
+          TableRow.append(Cell)
           try {
             if (data.table.rows[i].c[k].f === undefined) {
-              Cell.innerHTML = data.table.rows[i].c[k].v;
+              Cell.innerHTML = data.table.rows[i].c[k].v
             } else {
-              Cell.innerHTML = data.table.rows[i].c[k].f;
+              Cell.innerHTML = data.table.rows[i].c[k].f
             }
           } catch (error) {
-            Cell.innerHTML = "";
+            Cell.innerHTML = ""
           }
         }
       }
-    });
+    })
 
-  var input = document.getElementById("myInput");
-  input.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      Search();
+    const input = document.getElementById("myInput")
+  input.addEventListener("keydown", (event) => {
+    if (event.key == "Enter") {
+      Search()
     }
-  });
+  })
+  const button = document.getElementById("Search")
+  button.addEventListener("click", (event) => {
+    Search()
+  })
   function Search() {
     //Search
-    var input, filter, table, tr, td, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("myTable");
-    tr = table.getElementsByTagName("tr");
+    const input = document.getElementById("myInput") as HTMLInputElement
+    let filter = input.value.toUpperCase()
+    const table = document.getElementById("myTable")
+    let tr = table.getElementsByTagName("tr")
     if (filter == "") {
-      table.style.visibility = "hidden";
+      table.style.display= "none"
     } else {
-      table.style.display = "inline-table";
-      for (i = 0; i < tr.length; i++) {
-        td = tr[i].getElementsByTagName("td")[0];
+      table.style.display = "inline-table"
+      for (let i = 0; i < tr.length; i++) {
+        let td = tr[i].getElementsByTagName("td")[0]
         if (td) {
-          txtValue = td.innerText;
+          let txtValue = td.innerText
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            tr[i].style.display = "";
+            tr[i].style.display = ""
           } else {
-            tr[i].style.display = "none";
+            tr[i].style.display = "none"
           }
         }
       }

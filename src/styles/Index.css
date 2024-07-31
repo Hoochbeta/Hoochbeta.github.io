@@ -42,11 +42,10 @@ main {
   color: rgb(var(--white-text));
 }
 .titlecard:hover {
-  border: 3px solid #0000;
   background: linear-gradient(
-      var(--angle),
+      in prophoto-rgb  var(--angle),
       rgb(var(--accent)),
-      rgb(var(--secondary-Dark)) 50%,
+      rgb(var(--secondary-Dark)),
       rgb(var(--primary))
     )
     border-box;

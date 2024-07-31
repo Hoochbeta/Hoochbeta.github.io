@@ -20,26 +20,49 @@
       border-collapse: collapse;
     }
     .search-container {
+      padding: 0.25rem;
       display: flex;
+      flex-direction: row;
+      border-radius: 3rem;
+      gap: 0.25rem;
+      position: relative;
+      background: rgba(var(--text-color), 0.3);
+      overflow: hidden;
+      border: 1px solid rgb(var(--white-text));
+      align-items: center;
       justify-content: center;
-      width: 100vw;
-      padding: 10px;
+      transition: ease 2s;
+      margin: 1rem;
+      backdrop-filter: blur(30px);
     }
-    
-    input[type="text"] {
-      flex: 1;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px 0 0 5px;
-    }
-    button[type="submit"] {
-      padding: 10px 20px;
+    #Search {
+      padding: 1rem 2rem;
       background-color: rgb(var(--primary));
-      color: rgb(var(--accent));
+      border-radius: 3rem;
       border: none;
-      cursor: pointer;
-      border-radius: 0 5px 5px 0;
+      transition: ease 0.5s;
+      color: rgb(var(--text-color));
+      font-size: 1rem;
+    }
+    #Search:hover {
+      background-color: color-mix(in lch,rgb(var(--primary)), rgb(var(--white-text)) 25%);
+    }
+    #myInput {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 3rem;
+      border: none;
+      background-color: rgba(var(--secondary-Dark), 0.4);
+      transition: ease 0.5s;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    #myInput:hover {
+      background-color: rgba(var(--secondary-Dark), 1);
+    }
+    #myInput:focus {
+      outline: none;
+      background-color: rgba(var(--secondary-Dark), 1);
     }
     ::-webkit-scrollbar {
     height: 8px;
