@@ -70,6 +70,12 @@ import "../styles/Rankings.css";
             Rank.innerHTML  =
               "<i class='fa-solid fa-trophy'></i>";
           }
+          for(let i = 3;i<9;i++){
+            let Rank = document.getElementById(`row${i}`).firstChild as HTMLInputElement
+            console.log(Rank.innerHTML)
+            Rank.innerHTML = Rank.innerHTML+"&#8194;"
+            console.log(Rank.innerHTML)
+          }
           for (let i = 0; i < rows; i++) {
             let Hour = document.getElementById(`row${i}`).lastChild as HTMLInputElement;
             Hour.addEventListener("mouseenter", (event) => {

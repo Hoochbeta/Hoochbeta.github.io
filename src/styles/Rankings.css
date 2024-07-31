@@ -35,9 +35,6 @@ h1{
 .row:nth-child(odd) {
   background-color: rgb(var(--primary));
 }
-#row3 div:nth-child(2), #row4 div:nth-child(2),#row5 div:nth-child(2),#row6 div:nth-child(2), #row7 div:nth-child(2), #row8 div:nth-child(2){
-  padding-left: 12px;
-}
 #row0 div .fa-trophy {
   color: rgb(var(--accent));
   transform: none;
