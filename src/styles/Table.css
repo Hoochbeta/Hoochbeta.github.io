@@ -89,6 +89,8 @@ th {
 ::-webkit-scrollbar-corner {
   background-color: rgb(var(--bg));
 }
-.tablewrap{
-  overflow: scroll;
+@media(max-width:740px) {
+  .tablewrap{
+    overflow: scroll;
+  }
 }
