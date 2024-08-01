@@ -155,7 +155,7 @@ input[name="radio-Pic"] {
   width: 60vw;
   border-radius: 2rem;
   background-image: radial-gradient(
-    ellipse at top,
+    ellipse at top in prophoto-rgb,
     rgb(var(--primary)),
     rgb(var(--bg))
   );
