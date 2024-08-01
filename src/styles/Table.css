@@ -1,83 +1,94 @@
 @import url("Root.css");
-    table{
-      text-align: center;
-      padding: 10px;
-      display: none;
-      width: 100vw;
-    }
-    th{
-      font-size: 18px;
-      font-weight: 500;
-      width: 12.5%;
-      background-color: rgb(var(--secondary));
-      color: white;
-    }
-    td,th{
-      padding: 10px;
-    }
-    table, tr, td,th {
-      border: 2px solid white;
-      border-collapse: collapse;
-    }
-    .search-container {
-      padding: 0.25rem;
-      display: flex;
-      flex-direction: row;
-      border-radius: 3rem;
-      gap: 0.25rem;
-      position: relative;
-      background: rgba(var(--text-color), 0.3);
-      overflow: hidden;
-      border: 1px solid rgb(var(--white-text));
-      align-items: center;
-      justify-content: center;
-      transition: ease 2s;
-      margin: 1rem;
-      backdrop-filter: blur(30px);
-    }
-    #Search {
-      padding: 1rem 2rem;
-      background-color: rgb(var(--primary));
-      border-radius: 3rem;
-      border: none;
-      transition: ease 0.5s;
-      color: rgb(var(--text-color));
-      font-size: 1rem;
-    }
-    #Search:hover {
-      background-color: color-mix(in lch,rgb(var(--primary)), rgb(var(--white-text)) 25%);
-    }
-    #myInput {
-      width: 100%;
-      padding: 1rem;
-      border-radius: 3rem;
-      border: none;
-      background-color: rgba(var(--secondary-Dark), 0.4);
-      transition: ease 0.5s;
-      font-size: 1rem;
-      text-decoration: none;
-    }
-    #myInput:hover {
-      background-color: rgba(var(--secondary-Dark), 1);
-    }
-    #myInput:focus {
-      outline: none;
-      background-color: rgba(var(--secondary-Dark), 1);
-    }
-    ::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-    }
-    
-    ::-webkit-scrollbar-track {
-    background: rgb(var(--bg));
-    }
-    
-    ::-webkit-scrollbar-thumb {
-    background: rgb(var(--primary));
-    border-radius: 5px;
-    }
-    
-    ::-webkit-scrollbar-corner{
-      background-color: rgb(var(--bg));
-    }
+table {
+  text-align: center;
+  padding: 10px;
+  display: none;
+  width: 100vw;
+}
+th {
+  font-size: 18px;
+  font-weight: 500;
+  width: 12.5%;
+  background-color: rgb(var(--secondary));
+  color: white;
+}
+td,
+th {
+  padding: 10px;
+}
+table,
+tr,
+td,
+th {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+.search-container {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 3rem;
+  gap: 0.25rem;
+  position: relative;
+  background: rgba(var(--text-color), 0.3);
+  overflow: hidden;
+  border: 1px solid rgb(var(--white-text));
+  align-items: center;
+  justify-content: center;
+  transition: ease 2s;
+  margin: 1rem;
+  backdrop-filter: blur(30px);
+}
+#Search {
+  padding: 1rem 2rem;
+  background-color: rgb(var(--primary));
+  border-radius: 3rem;
+  border: none;
+  transition: ease 0.5s;
+  color: rgb(var(--text-color));
+  font-size: 1rem;
+}
+#Search:hover {
+  background-color: color-mix(
+    in lch,
+    rgb(var(--primary)),
+    rgb(var(--white-text)) 25%
+  );
+}
+#myInput {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: none;
+  background-color: rgba(var(--secondary-Dark), 0.4);
+  transition: ease 0.5s;
+  font-size: 1rem;
+  text-decoration: none;
+}
+#myInput:hover {
+  background-color: rgba(var(--secondary-Dark), 1);
+}
+#myInput:focus {
+  outline: none;
+  background-color: rgba(var(--secondary-Dark), 1);
+}
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--bg));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--primary));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgb(var(--bg));
+}
+.tablewrap{
+  overflow: scroll;
+}
