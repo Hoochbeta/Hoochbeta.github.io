@@ -7,21 +7,29 @@ import Navbar from "../components/Navbar.astro";
 
 <MainLayout title="Betacon">
   <Navbar />
-  <h1>Betacon</h1>
-  <div class="top">
-    <img src="../Images/Betacon/Betacon Logo.png" class="Betacon-Logo" />
-    <p>
-      Georgia Betacon is a state-wide convention during which members of
-      National Beta all throughout Georgia gather in savannah and compete in a
-      variety of competitions - ranging from subjects like agricultural science
-      to poetry. Some tests are conducted online, while other competitions (such
-      as live quizbowl or engineering) are conducted in person. In addition to
-      presenting the awards for these competitions, state officer candidates run
-      and are elected to office at the end of the convention. State Betacon is a
-      competitive, fun environment in which Beta members can meet new people,
-      compete (and win), and explore Savannah, Georgia!
-    </p>
+  <div class="container">
+    <h1>Betacon</h1>
+    <p>Betacon info paragraph</p>
+    <div class="badge-container">
+      <div class="badge">
+        <img src="../Images/Betacon/Betacon Logo.png" alt="Badge" />
+      </div>
+      <div class="badge">
+        <img src="../Images/Betacon/Betacon Logo.png" alt="Badge" />
+      </div>
+    </div>
+    <div class="badge-container">
+      <div class="badge">
+        <img src="../Images/Betacon/Betacon Logo.png" alt="Badge" />
+      </div>
+      <div class="badge">
+        <img src="../Images/Betacon/Betacon Logo.png" alt="Badge" />
+      </div>
+    </div>
   </div>
+  <Footer />
+</MainLayout>
+
   <!--image slider start-->
   <div class="slider">
     <div class="slides">
