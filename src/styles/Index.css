@@ -43,7 +43,7 @@ main {
 }
 .titlecard:hover {
   background: linear-gradient(
-      var(--angle),
+      in srgb var(--angle),
       rgb(var(--accent)),
       rgb(var(--secondary-Dark)),
       rgb(var(--primary))
@@ -155,7 +155,7 @@ input[name="radio-Pic"] {
   width: 60vw;
   border-radius: 2rem;
   background-image: radial-gradient(
-    ellipse at top,
+    ellipse at top in srgb,
     rgb(var(--primary)),
     rgb(var(--bg))
   );
