@@ -10,6 +10,7 @@ input[type=radio]{
     overflow: hidden;
     border: 1px solid rgb(var(--secondary-Dark));
     border-radius: 1rem;
+    scroll-snap-align: center;
 }
 .slides{
     width: 500%;
