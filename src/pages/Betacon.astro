@@ -75,12 +75,11 @@ import Footer from "../components/Footer.astro";
   </main>
 </MainLayout>
 <script>
-  const AwardSlider = document.querySelector(".award-slider")
+  const AwardSlider = document.querySelector(".award-slider");
 
   setInterval(() => {
     let Left = AwardSlider.firstElementChild;
-    AwardSlider.removeChild(Left)
-    AwardSlider.appendChild(Left)
-
+    AwardSlider.removeChild(Left);
+    AwardSlider.appendChild(Left);
   }, 5000);
 </script>
