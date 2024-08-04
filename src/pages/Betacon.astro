@@ -1,12 +1,12 @@
 ---
+import Navbar from "../components/Navbar.astro";
 import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/Betacon.css";
-import Footer from "../components/Footer.astro";
-import Navbar from "../components/Navbar.astro";
 import BetaconSlider from "../components/BetaconSlider.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<MainLayout title="Betacon">
+<MainLayout>
   <Navbar />
   <main>
     <div class="text">
@@ -45,10 +45,20 @@ import BetaconSlider from "../components/BetaconSlider.astro";
       </svg>
     </div>
     <div class="award-slider">
-      <div id="award-left" class="award"></div>
-      <div id="award-main" class="award"></div>
-      <div id="award-right" class="award"></div>
+      <div id="award0" title="award">
+        <img src="../Images/Betacon/Award0.png" alt="award" />
+      </div>
+      <div id="award1" title="award">
+        <img src="../Images/Betacon/Award1.png" alt="award" />
+      </div>
+      <div id="award2" title="award">
+        <img src="../Images/Betacon/Award2.png" alt="award" />
+      </div>
+      <div id="award3" title="award">
+        <img src="../Images/Betacon/Award3.png" alt="award" />
+      </div>
     </div>
+
     <div class="award-image-divider">
       <svg
         data-name="Layer 1"
@@ -65,23 +75,12 @@ import BetaconSlider from "../components/BetaconSlider.astro";
   </main>
 </MainLayout>
 <script>
-  const LeftAward = document.getElementById("award-left");
-  const MainAward = document.getElementById("award-main");
-  const RightAward = document.getElementById("award-right");
-  const AwardNum = 4;
-  let counter = 0;
+  const AwardSlider = document.querySelector(".award-slider")
+
   setInterval(() => {
-    for (let i = 0; i < 4; i++) {
-      if (counter == AwardNum) {
-        counter = 0;
-      }
-      if (i == counter) {
-        LeftAward.innerHTML = `<img src = "../Images/Betacon/Award${i}.png" alt = "award-left"></img>`;
-        MainAward.innerHTML = `<img src = "../Images/Betacon/Award${(i + 1) % AwardNum}.png" alt = "award-left"></img>`;
-        RightAward.innerHTML = `<img src = "../Images/Betacon/Award${(i + 2) % AwardNum}.png" alt = "award-left"></img>`;
-        counter++;
-        break;
-      }
-    }
-  }, 10000);
+    let Left = AwardSlider.firstElementChild;
+    AwardSlider.removeChild(Left)
+    AwardSlider.appendChild(Left)
+
+  }, 5000);
 </script>
