@@ -3,84 +3,85 @@ import MainLayout from "../layouts/MainLayout.astro";
 import "../styles/Betacon.css";
 import Footer from "../components/Footer.astro";
 import Navbar from "../components/Navbar.astro";
+import BetaconSlider from "../components/BetaconSlider.astro";
 ---
 
 <MainLayout title="Betacon">
   <Navbar />
-  <h1>Betacon</h1>
-  <div class="top">
-    <img src="../Images/Betacon/Betacon Logo.png" class="Betacon-Logo" />
-    <p>
-      Georgia Betacon is a state-wide convention during which members of
-      National Beta all throughout Georgia gather in savannah and compete in a
-      variety of competitions - ranging from subjects like agricultural science
-      to poetry. Some tests are conducted online, while other competitions (such
-      as live quizbowl or engineering) are conducted in person. In addition to
-      presenting the awards for these competitions, state officer candidates run
-      and are elected to office at the end of the convention. State Betacon is a
-      competitive, fun environment in which Beta members can meet new people,
-      compete (and win), and explore Savannah, Georgia!
-    </p>
-  </div>
-  <!--image slider start-->
-  <div class="slider">
-    <div class="slides">
-      <!--radio buttons start-->
-      <input type="radio" name="radio-btn" id="radio0" />
-      <input type="radio" name="radio-btn" id="radio1" />
-      <input type="radio" name="radio-btn" id="radio2" />
-      <input type="radio" name="radio-btn" id="radio3" />
-      <!--radio buttons end-->
-      <!--slide images start-->
-      <div class="slide first">
-        <img src="../Images/Betacon/Con1.png" alt="" />
-      </div>
-      <div class="slide">
-        <img src="../Images/Betacon/Con2.png" alt="" />
-      </div>
-      <div class="slide">
-        <img src="../Images/Betacon/Con3.png" alt="" />
-      </div>
-      <div class="slide">
-        <img src="../Images/Betacon/con4.png" alt="" />
-      </div>
-      <!--slide images end-->
-      <!--automatic navigation start-->
-      <div class="navigation-auto">
-        <div class="auto-btn0"></div>
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <div class="auto-btn3"></div>
-      </div>
-      <!--automatic navigation end-->
+  <main>
+    <div class="text">
+      <h1>Betacon</h1>
+      <p>
+        Georgia Betacon is a state-wide convention during which members of
+        National Beta all throughout Georgia gather in savannah and compete in a
+        variety of competitions - ranging from subjects like agricultural
+        science to poetry. Some tests are conducted online, while other
+        competitions (such as live quizbowl or engineering) are conducted in
+        person. In addition to presenting the awards for these competitions,
+        state officer candidates run and are elected to office at the end of the
+        convention. State Betacon is a competitive, fun environment in which
+        Beta members can meet new people, compete (and win), and explore
+        Savannah, Georgia!
+      </p>
     </div>
-    <!--manual navigation start-->
-    <div class="navigation-manual">
-      <label for="radio0" class="manual-btn"></label>
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-      <label for="radio3" class="manual-btn"></label>
+    <div class="text-award-divider">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25"
+          class="shape-fill"></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5"
+          class="shape-fill"></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"></path>
+      </svg>
     </div>
-    <!--manual navigation end-->
-  </div>
-  <!--image slider end-->
+    <div class="award-slider">
+      <div id="award-left" class="award"></div>
+      <div id="award-main" class="award"></div>
+      <div id="award-right" class="award"></div>
+    </div>
+    <div class="award-image-divider">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <div class="image-scroll">
+      <BetaconSlider Year="2021" />
+    </div>
+  </main>
 </MainLayout>
 <script>
-  const radio0 = document.getElementById("radio0") as HTMLInputElement;
-  radio0.checked = true;
-  setInterval(function () {
+  const LeftAward = document.getElementById("award-left");
+  const MainAward = document.getElementById("award-main");
+  const RightAward = document.getElementById("award-right");
+  const AwardNum = 4;
+  let counter = 0;
+  setInterval(() => {
     for (let i = 0; i < 4; i++) {
-      let radio = document.getElementById(
-        "radio" + String(i)
-      ) as HTMLInputElement;
-      let radio_next = document.getElementById(
-        "radio" + String((i + 1) % 4)
-      ) as HTMLInputElement;
-      if (radio.checked == true) {
-        radio.checked = false;
-        radio_next.checked = true;
+      if (counter == AwardNum) {
+        counter = 0;
+      }
+      if (i == counter) {
+        LeftAward.innerHTML = `<img src = "../Images/Betacon/Award${i}.png" alt = "award-left"></img>`;
+        MainAward.innerHTML = `<img src = "../Images/Betacon/Award${(i + 1) % AwardNum}.png" alt = "award-left"></img>`;
+        RightAward.innerHTML = `<img src = "../Images/Betacon/Award${(i + 2) % AwardNum}.png" alt = "award-left"></img>`;
+        counter++;
         break;
       }
     }
-  }, 5000);
+  }, 10000);
 </script>
