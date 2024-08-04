@@ -1,0 +1,49 @@
+---
+import "../styles/BetaconSlider.css";
+const { Year } = Astro.props;
+---
+
+<div class="BetaconSlider">
+  <h3>{Year}</h3>
+  <div class="year-wrapper" id={Year} title="Year">
+    <input type="radio" name=`${Year}radio` id=`${Year}rad0` />
+    <input type="radio" name=`${Year}radio` id=`${Year}rad1` />
+    <input type="radio" name=`${Year}radio` id=`${Year}rad2` />
+    <input type="radio" name=`${Year}radio` id=`${Year}rad3` />
+    <div class="slide-wrapper">
+      <div class="slides">
+        <img
+          src=`../Images/Betacon/${Year}/con0.png`
+          alt=`${Year}con0`
+          id="First"
+        />
+        <img src=`../Images/Betacon/${Year}/con1.png` alt=`${Year}con1` />
+        <img src=`../Images/Betacon/${Year}/con2.png` alt=`${Year}con2` />
+        <img src=`../Images/Betacon/${Year}/con3.png` alt=`${Year}con3` />
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  const Year = document.querySelector("[title = Year]").getAttribute("id");
+  const rad0 = document.getElementById(`${Year}rad0`) as HTMLInputElement;
+  rad0.checked = true;
+  const First = document.getElementById("First");
+  const randTime = Math.floor(Math.random() * 2001 + 8000);
+  setInterval(() => {
+    for (let i = 0; i < 4; i++) {
+      let radioCurrent = document.getElementById(
+        `${Year}rad${i}`
+      ) as HTMLInputElement;
+      let radioNext = document.getElementById(
+        `${Year}rad${(i + 1) % 4}`
+      ) as HTMLInputElement;
+      if (radioCurrent.checked == true) {
+        radioCurrent.checked = false;
+        radioNext.checked = true;
+        First.style.marginLeft = `${((i + 1) % 4) * -20}%`;
+        break;
+      }
+    }
+  }, randTime);
+</script>
