@@ -1,12 +1,14 @@
 .opportunity-card {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(var(--secondary-Dark));
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.2s;
   max-width: 300px;
   margin: 16px;
-  background-color: #fff;
+  color: rgb(var(--text-color));
+  background-color: rgb(var(--white-text));
 }
+
 
 .opportunity-card:hover {
   transform: scale(1.02);
@@ -33,7 +35,7 @@
 
 .OpportunityType,
 .OpportunityHours {
-  background-color: #f0f0f0;
+  background-color: rgb(var(--secondary-Dark));
   border-radius: 12px;
   padding: 4px 8px;
 }
@@ -56,4 +58,9 @@
   text-decoration: none;
   border-radius: 4px;
   text-align: center;
+}
+@media(prefers-color-scheme: dark){
+  .opportunity-card {
+    color: rgb(var(--bg));
+  }
 }

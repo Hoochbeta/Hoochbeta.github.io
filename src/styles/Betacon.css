@@ -9,6 +9,7 @@ h1 {
   background-color: rgb(var(--secondary-Dark));
   padding: 0.5rem;
   padding-bottom: 2.5rem;
+  color: rgb(var(--text-color));
 }
 .award-slider {
   display: flex;
@@ -93,5 +94,10 @@ div[title="award"] {
   .award-slider div:nth-child(3) {
     position: absolute;
     opacity: 0;
+  }
+}
+@media(prefers-color-scheme: dark){
+  .text {
+    color: rgb(var(--white-text));
   }
 }

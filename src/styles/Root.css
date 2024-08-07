@@ -1,3 +1,4 @@
+@media(prefers-color-scheme: light){
 :root{
     --bg: 248, 239, 228;/*Cream*/
     --primary:157, 217, 243;/*Columbia Blue */
@@ -9,7 +10,20 @@
     --bronze:rgb(205, 127, 50);
     --pic-width:350px;
 }
-
+}
+@media(prefers-color-scheme: dark){
+    :root{
+        --bg: 40, 40, 40;/*Jet Black*/ 
+        --primary:0, 70, 111;/*Regal Blue*/
+        --accent: 207, 181, 59;/*Gold*/
+        --text-color: 248, 239, 228;/*Cream*/
+        --white-text:255,255,255;/*White*/
+        --secondary:157, 217, 243;/*Columbia Blue */ 
+        --secondary-Dark: 173, 176, 177; /*Silver*/
+        --bronze:rgb(205, 127, 50);
+        --pic-width:350px;
+    }
+    }
 /*Rosewater - #E6C2BF
 Columbia Blue - #9dd9f3
 Cream - #F8EFE4

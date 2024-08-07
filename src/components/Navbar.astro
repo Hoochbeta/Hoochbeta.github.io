@@ -89,7 +89,13 @@ import "../styles/Beta.css";
       }
     });
   });
-
+  const preferDark = window.matchMedia('(prefers-color-scheme: dark)')
+  if(preferDark.matches){
+    let image = document.querySelectorAll('.Logo')
+    image.forEach((img:HTMLImageElement)=>{
+      img.src = "/Images/Logo-Dark.png"
+    })
+  }
   document.querySelector(".menu-btn").addEventListener("click", function () {
     var navbar = document.querySelector(".navbar");
     navbar.classList.add("active");
