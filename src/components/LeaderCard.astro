@@ -12,7 +12,7 @@ const { Name, Title, About, Image, House, Mail } = Astro.props;
   </div>
   <p class="Title">
     {Title}
-    <a href=`mailto:${Mail}` class="Mail" aria-valuetext=`${Mail}`>
+    <a href=`mailto:${Mail}` class="Mail">
       <i class="fa-solid fa-envelope Mail"></i>
     </a>
   </p>
@@ -20,11 +20,3 @@ const { Name, Title, About, Image, House, Mail } = Astro.props;
     {About}
   </p>
 </div>
-<script>
-  const Mail = document.querySelector(".Mail") as HTMLAnchorElement;
-
-  Mail.addEventListener("click", () => {
-    navigator.clipboard.writeText(Mail.ariaValueText);
-    window.alert(Mail.ariaValueText + " copied to clipboard");
-  });
-</script>
