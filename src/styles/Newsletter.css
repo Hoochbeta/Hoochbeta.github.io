@@ -34,6 +34,9 @@ main{
 .box>a{
     cursor: pointer;
 }
+.box>a:hover{
+    color:rgb(var(--accent))
+}
 .menu-btn{
     z-index: 2;
     margin: 0;
