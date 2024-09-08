@@ -3,18 +3,41 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import OpportunityCard from "../components/OpportunityCard.astro";
+import "../styles/OpportunityPage.css"
 ---
 
 <MainLayout title="Opportunities">
   <Navbar />
+  <main>
+  <OpportunityCard
+    Title="JC Methodist Children's Consignment Sale"
+    Hours="3 Hours/Shift"
+    Expired="Active"
+    Location="JC UMC"
+    SponsorName="JC Methodist Church"
+    SponsorContact="johnscreekumcsale@gmail.com"
+    Link="https://www.signupgenius.com/go/10C0E4CA9A722A7F8C34-50985249-childrens#/"
+    Image="https://s3.amazonaws.com/images.signupgenius.com/memberImages/561B6E21F324B427A71C74F1D3E8D712_131589554.jpg"
+  />
+  <OpportunityCard
+    Title="CHS Fencing Tournament"
+    Hours="1-4 Hours/Shift"
+    Expired = "Active"
+    Location="CHS"
+    SponsorName="Kemi Tunwashe"
+    SponsorContact="310-780-6966"
+    Link="https://www.signupgenius.com/go/10C0A4CA9AF22A1F4C52-50951977-volunteers#/"
+    Image="https://www.signupgenius.com/images/theme/759C5A0B9BF62E5912C346A233D95BFE_0.png"
+  />
   <OpportunityCard
     Title="Help Your Teachers"
     Hours="2.5 Hours"
+    Expired = "Expired"
     Location="CHS"
     SponsorName="Ms. Lee"
     SponsorContact="leelc@fultoncountyschools.org"
     Link="https://www.signupgenius.com/go/5080D44A5AA2EA7F58-50393997-teacher"
     Image="https://www.signupgenius.com/images/theme/C5145FF2779364F906B97AF758FC3465_0.png"
   />
-  
+</main>
 </MainLayout>
