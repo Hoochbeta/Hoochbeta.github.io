@@ -91,6 +91,11 @@ h4 {
 }
 .opportunities {
   font-size: 18px;
+  color: rgb(var(--white-text));
+}
+
+a{
+  color: rgb(var(--white-text));
 }
 
 .options {
