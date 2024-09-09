@@ -85,7 +85,7 @@ details[open] summary{
     border-radius: 8px 8px 0 0;
 }
 .faq-answer a{
-  color: rgb(var(--primary));
+  color: black;
   text-decoration: underline;
 }
 @media(max-width:740px){
