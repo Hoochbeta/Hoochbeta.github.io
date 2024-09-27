@@ -21,6 +21,8 @@
 
 .OpportunityContent {
   padding: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .OpportunityTitle {
@@ -51,13 +53,14 @@
 }
 
 .OpportunityLink {
-  display: block;
   padding: 8px 16px;
   background-color: rgb(var(--primary));
   color: rgb(var(--text-color));
   text-decoration: none;
   border-radius: 4px;
   text-align: center;
+  align-self: flex-end;
+  width: 100%;
 }
 @media(prefers-color-scheme: dark){
   .opportunity-card {
