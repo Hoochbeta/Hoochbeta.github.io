@@ -42,7 +42,7 @@ a{
 .nav-links {
   list-style: none;
   display: grid;
-  grid-template-columns: .5fr 3fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: .5fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 10px;
   text-decoration: none;
   color: rgb(var(--text-color));
