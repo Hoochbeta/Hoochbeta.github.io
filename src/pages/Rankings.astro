@@ -6,7 +6,7 @@ import "../styles/Table.css";
 import "../styles/Check.css";
 ---
 
-<MainLayout title="Attendance Check">
+<MainLayout title="Hour Check">
   <Navbar />
   <div class="search-container">
     <input type="text" id="myInput" placeholder="Search for your name" />
@@ -16,7 +16,9 @@ import "../styles/Check.css";
     <table id="myTable"></table>
   </div>
   <div id="row1">
+    <div class="hours">Minimum of 10 hours per Semester</div>
     <div class="meeting">Attend all meetings</div>
+    <div class="vary">Have at least 3 different types of hours</div>
   </div>
 </MainLayout>
 <script>
@@ -25,7 +27,7 @@ import "../styles/Check.css";
     import.meta.env.PUBLIC_ID2,
     import.meta.env.PUBLIC_ID3,
   ];
-  const sheetTitle = import.meta.env.PUBLIC_ATTENDANCE;
+  const sheetTitle = import.meta.env.PUBLIC_CHECK;
   let randInt = Math.floor(Math.random() * 3);
 
   const FULL_URL =
